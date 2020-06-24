@@ -31,19 +31,19 @@ This tutorial requires some knowledge of using 3D software and game engine mecha
 
 This document will be divided up into sections and address the workflow for converting characters for Face Tracking in both MakeHuman and Fuse in parallel.
 1. Exporting Blendshapes from character creator software and importing into Maya
-  - Fuse to Mixamo
-  - Mixamo to Maya
-  - Editing Blendshapes in Maya from Fuse
-  - MakeHuman to Blender
-  - Blender to Maya
-  - Editing Blendshapes in Maya from MakeHuman
-  - Merging Blendshapes
+   - Fuse to Mixamo
+   - Mixamo to Maya
+   - Editing Blendshapes in Maya from Fuse
+   - MakeHuman to Blender
+   - Blender to Maya
+   - Editing Blendshapes in Maya from MakeHuman
+   - Merging Blendshapes
 2. Python Scripting
-  - Knowledge and Filestructuring
-  - Renaming the blendshapes
+   - Knowledge and Filestructuring
+   - Renaming the blendshapes
 3. Importing in Unreal
-  - Importing the FBX
-  - Setting up blueprints in Unreal
+   - Importing the FBX
+   - Setting up blueprints in Unreal
 
 
 
