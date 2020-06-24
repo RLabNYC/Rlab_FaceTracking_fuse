@@ -1,3 +1,5 @@
+![Image of rlab](https://ibb.co/XLQcS2h)
+
 # Authors
 
 Todd Bryant, Katt Sullivan and Grant Ng
@@ -16,7 +18,7 @@ Now with ARKit and an iPhone with a front-facing True Depth camera you can track
 * Python download here: https://www.python.org/downloads/ **scroll all the way to see how to download properly!
 * For motion capture: 
 * Motive software and you need to have a space to do mocap. 
-* Software versions:
+### Software versions:
 * Unreal version 4.23
 * iPhone/iOS device at OS version 13.3 
 * Maya 2018 or 2019
