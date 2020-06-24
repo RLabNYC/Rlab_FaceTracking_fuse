@@ -1,4 +1,4 @@
-![Image of rlab](https://i.ibb.co/9gDQs8F/Building22.png)
+![Image of rlab](https://i.ibb.co/9gDQs8F/Building22.png) ![image of the rlab logo](https://i.ibb.co/brzcMC4/RLab-Logo-1.png)
 
 # Authors
 
@@ -6,7 +6,7 @@ Todd Bryant, Katt Sullivan and Grant Ng
 
 # From the RLab!
 
-![image of the rlab logo](https://i.ibb.co/brzcMC4/RLab-Logo-1.png)
+To learn more about us visit our website [here](https://www.rlab.nyc/)
 
 ## Description
 Now with ARKit and an iPhone with a front-facing True Depth camera you can track your facial features allowing you animate digital avatars. The avatars first have to be prepared with point-level animation called blendshapes.  ARKit uses 52 of these to animate the avatar faces.  3D modelling is a craft that takes a long time to master and setting up all of these blendshapes can be daunting, so we’ve developed a workflow to ease the barrier to get your character up and running in a matter of minutes by levering two free avatar creation tools: Adobe Fuse and MakeHuman. Both programs have more than enough blendshapes to animate a face, the just need to be renamed to the ARKit conventions. We’ve developed a simple script to automate of lot of this process.
@@ -28,5 +28,22 @@ Now with ARKit and an iPhone with a front-facing True Depth camera you can track
 * Python 3.8  
 
 This tutorial requires some knowledge of using 3D software and game engine mechanics. We will provide more links for beginners that walk you through a more in depth walkthrough. 
+
+This document will be divided up into sections and address the workflow for converting characters for Face Tracking in both MakeHuman and Fuse in parallel.
+1. Exporting Blendshapes from character creator software and importing into Maya
+  - Fuse to Mixamo
+  - Mixamo to Maya
+  - Editing Blendshapes in Maya from Fuse
+  - MakeHuman to Blender
+  - Blender to Maya
+  - Editing Blendshapes in Maya from MakeHuman
+  - Merging Blendshapes
+2. Python Scripting
+  - Knowledge and Filestructuring
+  - Renaming the blendshapes
+3. Importing in Unreal
+  - Importing the FBX
+  - Setting up blueprints in Unreal
+
 
 
