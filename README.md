@@ -51,9 +51,13 @@ There are multiple ways to have a fully rigged character and have a facial rig s
 
 1. Exporting blendshapes from Fuse and MakeHuman and importing into Maya
    - Adobe Fuse to Mixamo: 
-    - Once you have downloaded Fuse, go through the process of creating your custom character. Make your character look however you want. Keep the model simple and avoid facial hair or eyelashes. Once you are at the last step, Fuse has a button at the top of the screen to bring your character into Mixamo. Click on “send to mixamo”
+   - Once you have downloaded Fuse, go through the process of creating your custom character. Make your character look however you want. Keep the model simple and avoid facial hair or eyelashes. Once you are at the last step, Fuse has a button at the top of the screen to bring your character into Mixamo. Click on “send to mixamo”
 
+![mixamo screenshot](https://i.ibb.co/CM961X8/Annotation-2020-02-06-151238.png)
 
+   - After you click on send to mixamo, your internet browser will open up and Mixamo will open automatically. Once mixamo’s algorithm is finished rigging your character, you will see two dropdown selections on the bottom of the screen. 
+   
+   ![mixamo screenshot2](https://i.ibb.co/n30TyF1/Annotation-2020-02-06-151833.png)
 
 # Python Setup 
 
