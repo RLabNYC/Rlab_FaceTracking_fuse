@@ -47,6 +47,13 @@ This tutorial requires some knowledge of using 3D software and game engine mecha
 # Importing and Exporting free 3D characters blendshapes with Maya
 
 First steps you need to have the LiveLink app downloaded onto your iPhone before you start this tutorial. 
+There are multiple ways to have a fully rigged character and have a facial rig set up in minutes. 
+
+1. Exporting blendshapes from Fuse and MakeHuman and importing into Maya
+
+#### Adobe Fuse to Mixamo: 
+    - Once you have downloaded Fuse, go through the process of creating your custom character. Make your character look however you want. Keep the model simple and avoid facial hair or eyelashes. Once you are at the last step, Fuse has a button at the top of the screen to bring your character into Mixamo. Click on “send to mixamo”
+
 
 
 # Python Setup 
