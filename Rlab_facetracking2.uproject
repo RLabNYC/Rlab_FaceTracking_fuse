@@ -1,0 +1,26 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "4.24",
+	"Category": "",
+	"Description": "",
+	"Plugins": [
+		{
+			"Name": "LiveLink",
+			"Enabled": true
+		},
+		{
+			"Name": "AppleARKit",
+			"Enabled": true,
+			"SupportedTargetPlatforms": [
+				"IOS"
+			]
+		},
+		{
+			"Name": "AppleARKitFaceSupport",
+			"Enabled": true,
+			"SupportedTargetPlatforms": [
+				"IOS"
+			]
+		}
+	]
+}
