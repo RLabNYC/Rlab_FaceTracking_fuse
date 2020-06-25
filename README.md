@@ -108,8 +108,9 @@ In this example picture you want to select both the Left and Right blendshapes. 
 	 - MouthNarrow_Left and MouthNarrow_Right = mouthPucker
 	 - CheekPuff_Left and CheekPuffRight = cheekPuff
 
+![Maya screenshot](https://i.ibb.co/2dZDwgv/Autodesk-Maya-2018-Educational-Version-E-Python-Sripts-Python-Sripts-fuse-RLab-ma-6-24-2020-8-23-29-PM-2.png)
 
-
+**Be sure to save this file as a “.ma” (maya ASCII) file for running python script later on!**
 
 
 
