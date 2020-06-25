@@ -101,10 +101,14 @@ Once you can see all the blendshapes, shown in the previous picture, scroll all 
 
 ![Maya screenshot](https://i.ibb.co/jwNDpVd/Annotation-2020-02-27-125500.png)
 
+In this example picture you want to select both the Left and Right blendshapes. Be sure to drag the toggles all the way to the right and select both Left and Right blendshapes and right click into one of them and select mirror targets. Once it is merged you need to find the name again, and rename it to cheekPuff the name has to be exact!
+
+   - **Repeat the process for all three, then rename the merged blendshape to the names in bold:**
+	 - BrowsOuterLower_Lefft and BrowsOuterLower_Right = browInnerUp
+	 - MouthNarrow_Left and MouthNarrow_Right = mouthPucker
+	 - CheekPuff_Left and CheekPuffRight = cheekPuff
 
 
-   - When you see the long list of blendshape targets do not be overwhelmed, there is just three things you need to here. 
-	 - 
 
 
 
