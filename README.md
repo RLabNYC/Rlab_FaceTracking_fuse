@@ -113,9 +113,6 @@ In this example picture you want to select both the Left and Right blendshapes. 
 **Be sure to save this file as a “.ma” (maya ASCII) file for running python script later on!**
 
 
-
-   - You can now save the Maya scene as a (ASCII) .ma file and you are ready apply our python script to rename the blendshapes. 
-
 # Python Setup 
 
 Be sure to read our setup [here](https://github.com/RLabNYC/RLab_FaceTracking_RenameScripts)
