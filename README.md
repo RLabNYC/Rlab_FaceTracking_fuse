@@ -131,7 +131,20 @@ In order to have the blendshapes register in Unreal, the blendshapes needs to be
   - The file structure should look this
 ![file screen shot](https://i.ibb.co/4SBsmSY/Python-Sripts-6-25-2020-3-40-32-PM-2.png)
 
+You will need to change directory in Terminal or Command Prompt to the folder that your files and Pythons scripts are in. 
 
+Make sure all three files are in the same folder before you run the script. This is basically reading the CSV file and replaces all the fuse blendshape names with the apple blendshape names in the .ma file.
+
+  - **For  WINDOWS Users:**
+     - Open the command prompt as admin, you can search for it.
+     - Navigate to the folder with the python scripts (cd into the folder). In the command line, type in: runme.bat
+
+  - **For MAC Users:** 
+     - open terminal, search for” terminal” in the finder. 
+     - Navigate to the folder where the python scripts live (cd into the folder). Type in: source runme.sh
+     - Once the program runs, make sure to type in: deactivate
+
+![file screen shot](https://i.ibb.co/ynLk4ys/Command-Prompt-runme-bat-6-24-2020-8-21-21-PM.png)
 
 
 
