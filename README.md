@@ -70,7 +70,16 @@ Download your character as FBX. It should already be rigged and in a T-Pose.
 	  
 ![maya screenshot](https://i.ibb.co/SXKrGzw/Autodesk-Maya-2018-Educational-Version-untitled-6-24-2020-8-10-18-PM-2.png)
 
-	
+   - After the import in done, there are some textures are transparent. It is an easy fix!
+	  - In Maya, just switch workspace modes to "maya classic"
+	  - Then select the mesh and select the attribute editor tab on the far right and select the farthest tab. 
+	  - You will see a transparency slider grayed out. Right click on it and select "break connection".
+	  - And the texture will be fixed! 
+
+![maya screenshot](https://i.ibb.co/3BWk5bL/Autodesk-Maya-2018-Educational-Version-untitled-6-24-2020-8-12-06-PM-2.png)
+
+![maya screenshot](https://i.ibb.co/cTY1xX9/Autodesk-Maya-2018-Educational-Version-untitled-6-24-2020-8-12-55-PM-3.png)
+
 
 # Python Setup 
 
