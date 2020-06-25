@@ -59,6 +59,19 @@ There are multiple ways to have a fully rigged character and have a facial rig s
    
    ![mixamo screenshot2](https://i.ibb.co/n30TyF1/Annotation-2020-02-06-151833.png)
 
+   -For the dropdowns:
+     - Make sure facial blendshapes are enabled
+     - Skeleton LOD 65 is fine for basic movement. 
+     - Hit update rig button and you're free to download your character to your computer! 
+
+Download your character as FBX. It should already be rigged and in a T-Pose.
+   - Mixamo to Maya
+	  -  Import the FBX into Maya. Choose the Sculpting layout from the top right Workspaces dropdown menu. It will change the layout of Maya to bring up the Blendshapes. This is a screenshot of what the blendshapes will come out as when you open the Fuse FBX file in Maya. You can drag the sliders for each shape and see how it affects the face mesh
+	  
+![maya screenshot](https://i.ibb.co/SXKrGzw/Autodesk-Maya-2018-Educational-Version-untitled-6-24-2020-8-10-18-PM-2.png)
+
+	
+
 # Python Setup 
 
 Be sure to read our setup [here](https://github.com/RLabNYC/RLab_FaceTracking_RenameScripts)
