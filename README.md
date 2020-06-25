@@ -50,7 +50,7 @@ First steps you need to have the LiveLink app downloaded onto your iPhone before
 There are multiple ways to have a fully rigged character and have a facial rig set up in minutes. 
 
 1. Exporting blendshapes from Fuse and MakeHuman and importing into Maya
-   - Adobe Fuse to Mixamo: 
+   - **Adobe Fuse to Mixamo:**
    - Once you have downloaded Fuse, go through the process of creating your custom character. Make your character look however you want. Keep the model simple and avoid facial hair or eyelashes. Once you are at the last step, Fuse has a button at the top of the screen to bring your character into Mixamo. Click on “send to mixamo”
 
 ![mixamo screenshot](https://i.ibb.co/CM961X8/Annotation-2020-02-06-151238.png)
@@ -59,13 +59,13 @@ There are multiple ways to have a fully rigged character and have a facial rig s
    
    ![mixamo screenshot2](https://i.ibb.co/n30TyF1/Annotation-2020-02-06-151833.png)
 
-   - For the dropdowns:
+   - **For the dropdowns:**
      - Make sure facial blendshapes are enabled
      - Skeleton LOD 65 is fine for basic movement. 
      - Hit update rig button and you're free to download your character to your computer! 
 
 Download your character as FBX. It should already be rigged and in a T-Pose.
-   - Mixamo to Maya
+   - **Mixamo to Maya**
 	  -  Import the FBX into Maya. Choose the Sculpting layout from the top right Workspaces dropdown menu. It will change the layout of Maya to bring up the Blendshapes. This is a screenshot of what the blendshapes will come out as when you open the Fuse FBX file in Maya. You can drag the sliders for each shape and see how it affects the face mesh
 	  
 ![maya screenshot](https://i.ibb.co/SXKrGzw/Autodesk-Maya-2018-Educational-Version-untitled-6-24-2020-8-10-18-PM-2.png)
@@ -75,11 +75,41 @@ Download your character as FBX. It should already be rigged and in a T-Pose.
 	  - Then select the mesh and select the attribute editor tab on the far right and select the farthest tab. 
 	  - You will see a transparency slider grayed out. Right click on it and select "break connection".
 	  - And the texture will be fixed! 
+	  
 
 ![maya screenshot](https://i.ibb.co/3BWk5bL/Autodesk-Maya-2018-Educational-Version-untitled-6-24-2020-8-12-06-PM-2.png)
 
 ![maya screenshot](https://i.ibb.co/cTY1xX9/Autodesk-Maya-2018-Educational-Version-untitled-6-24-2020-8-12-55-PM-3.png)
 
+   - Apply the fix for all the meshes and switch back the workspace to "sculpting"
+	  - **Editing Blendshapes in Maya from Fuse:**
+If you select the face mesh, you will see all the targets for the facial movements. Fuse will give you three blendshape groups, the last group is the one you want to focus on. If you change the workspace in maya to Sculpting, you will be able to see the amount of blendshapes easier. 
+
+When you select the blendshape targets you can move the sliders back and forth and you will be able to see eye’s blinking and the mouth opening and closing. Once you have your character all set up in Maya, you can save this file as a Maya Ascii file. Make sure the file is saved with a .ma extension. Make a folder for this project and place this file in it.  For simplicity’s sake use a root directory (D:\BlendshapesFaceTracking) this is  important for the next steps that involve running a python script. 
+
+On the right, you see the name “blendShape1” You can rename these groups like  “_ncl1_1”. The group of **“_ncl1_2”** is where most of the animations are. You need to rename the groups with circle square icons and a little “ +” sign next to it like “_ncl1_2” to **Blendshape_[ name of mesh]**. 
+
+![Maya screenshot](https://i.ibb.co/D9QDx1n/Annotation-2020-02-27-110918.png)
+
+   - **Merging Blendshapes in Fuse:**
+	  - There are three blendshapes that need to be merged in maya, first, you need to identify
+	  - BrowsOuterLower_Lefft and BrowsOuterLower_Right
+	  - MouthNarrow_Left and MouthNarrow_Right
+	  - CheekPuff_Left and CheekPuff_Right
+
+Once you can see all the blendshapes, shown in the previous picture, scroll all the way down look for three types 
+
+![Maya screenshot](https://i.ibb.co/jwNDpVd/Annotation-2020-02-27-125500.png)
+
+
+
+   - When you see the long list of blendshape targets do not be overwhelmed, there is just three things you need to here. 
+	 - 
+
+
+
+
+   - You can now save the Maya scene as a (ASCII) .ma file and you are ready apply our python script to rename the blendshapes. 
 
 # Python Setup 
 
