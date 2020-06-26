@@ -153,8 +153,8 @@ Under the Plugins for MakeHuman section download MHAPI and Forked MHX2. The Fork
 
 ![Make human export](https://i.ibb.co/vQXVNdX/Work-flow-for-facial-tracking-Google-Docs-Google-Chrome-6-25-2020-7-36-36-PM-2.png)
 
-    - **Importing into Blender**
-    - Now Open Blender and navigate to File -> Import -> MakeHuman (.mhx2).  On the import window select your file from MakeHuman and Check the box on the right for Override Exported Data.  Under Import Human Type check Face Shapes. Under Rigging choose the Rig Type Humanik.
+  - **Importing into Blender**
+  - Now Open Blender and navigate to File -> Import -> MakeHuman (.mhx2).  On the import window select your file from MakeHuman and Check the box on the right for Override Exported Data.  Under Import Human Type check Face Shapes. Under Rigging choose the Rig Type Humanik.
 
 ![Blnder set up](https://i.ibb.co/W54b0YG/blendersetup.png)
 
