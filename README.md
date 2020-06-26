@@ -46,7 +46,7 @@ This tutorial requires some knowledge of using 3D software and game engine mecha
 
 # Importing and Exporting free 3D characters blendshapes with Maya
 
-First steps you need to have the LiveLink app downloaded onto your iPhone before you start this tutorial. 
+First steps you need to have the LiveLink app downloaded onto your iPhone before you start this tutorial. Then download or clone this repository somewhere on your computer. 
 There are multiple ways to have a fully rigged character and have a facial rig set up in minutes. 
 
 **1. Exporting blendshapes from Fuse and importing into Maya**
@@ -104,9 +104,9 @@ Once you can see all the blendshapes, shown in the previous picture, scroll all 
 In this example picture you want to select both the Left and Right blendshapes. Be sure to drag the toggles all the way to the right and select both Left and Right blendshapes and right click into one of them and select mirror targets. Once it is merged you need to find the name again, and rename it to cheekPuff the name has to be exact!
 
    - **Repeat the process for all three, then rename the merged blendshape to the names in bold:**
-	 - BrowsOuterLower_Lefft and BrowsOuterLower_Right = browInnerUp
-	 - MouthNarrow_Left and MouthNarrow_Right = mouthPucker
-	 - CheekPuff_Left and CheekPuffRight = cheekPuff
+	 - BrowsOuterLower_Lefft and BrowsOuterLower_Right = **browInnerUp**
+	 - MouthNarrow_Left and MouthNarrow_Right = **mouthPucker**
+	 - CheekPuff_Left and CheekPuffRight = **cheekPuff**
 
 ![Maya screenshot](https://i.ibb.co/2dZDwgv/Autodesk-Maya-2018-Educational-Version-E-Python-Sripts-Python-Sripts-fuse-RLab-ma-6-24-2020-8-23-29-PM-2.png)
 
@@ -149,27 +149,27 @@ Under the Plugins for MakeHuman section download MHAPI and Forked MHX2. The Fork
 ![blender set up](https://i.ibb.co/khfv10x/Work-flow-for-facial-tracking-Google-Docs-Google-Chrome-6-25-2020-6-59-29-PM-2.png)
 
     - Exporting from MakeHuman
-     - Create your avatar in MakeHuman. Put your character into a T-Pose before exporting.  Go to Files -> Export and Select MakeHuman Exchange (mhx2), then check the box for Poses on the right Options menu.  Blendshapes are called Targets in MakeHuman and they are used in the Poses.  If you do not see these options, check your plugin installation.
+    - Create your avatar in MakeHuman. Put your character into a T-Pose before exporting.  Go to Files -> Export and Select MakeHuman Exchange (mhx2), then check the box for Poses on the right Options menu.  Blendshapes are called Targets in MakeHuman and they are used in the Poses.  If you do not see these options, check your plugin installation.
 
 ![Make human export](https://i.ibb.co/vQXVNdX/Work-flow-for-facial-tracking-Google-Docs-Google-Chrome-6-25-2020-7-36-36-PM-2.png)
 
-     - **Importing into Blender**
-      - Now Open Blender and navigate to File -> Import -> MakeHuman (.mhx2).  On the import window select your file from MakeHuman and Check the box on the right for Override Exported Data.  Under Import Human Type check Face Shapes. Under Rigging choose the Rig Type Humanik.
+    - **Importing into Blender**
+    - Now Open Blender and navigate to File -> Import -> MakeHuman (.mhx2).  On the import window select your file from MakeHuman and Check the box on the right for Override Exported Data.  Under Import Human Type check Face Shapes. Under Rigging choose the Rig Type Humanik.
 
 ![Blnder set up](https://i.ibb.co/W54b0YG/blendersetup.png)
 
 ![Blender import](https://i.ibb.co/4gvR1gm/Blender-6-23-2020-8-21-51-PM-2.png)
 
-     - Export as FBX from Blender. Turn off “Apply Modifiers” in the Geometry section of the FBX export options.
-	 - **In Maya from MakeHuman/Blender:**
+    - Export as FBX from Blender. Turn off “Apply Modifiers” in the Geometry section of the FBX export options.
+	- **In Maya from MakeHuman/Blender:**
 After you created the model in Blender, and it is exported as a FBX, open the file in Maya. Make sure to delete the default cube, light, and camera from the Blender scene first.
 
 Once you import the model in Maya you should scale the bone joint size. In the toolbar look for Display > Animation > Joint Size. Scale it down to whatever is comfortable for you. This is to make it easier to see the animation of the blendshapes. 
 
 Then switch the workspace mode to sculpting this will layout the blendshapes in a easier way to see. 
 
-      - **Editing Blendshapes in Maya from MakeHuman:**
-Once you make the switch, you will see a bunch of orange targets, these are the blendshapes. You can toggle between how strong you want each target to be for animation purposes. It’s basically like a light dimmer.
+    - **Editing Blendshapes in Maya from MakeHuman:**
+    - Once you make the switch, you will see a bunch of orange targets, these are the blendshapes. You can toggle between how strong you want each target to be for animation purposes. It’s basically like a light dimmer.
 
 ![makehuman blendshapes](https://i.ibb.co/YfqrB1Z/Autodesk-Maya-2018-Educational-Version-untitled-6-23-2020-8-33-46-PM.png)
 
@@ -188,6 +188,7 @@ In maya, you want to locate these two pairs of blendshapes and merge them. In or
 
 ![merge targets](https://i.ibb.co/jwNDpVd/Annotation-2020-02-27-125500.png)
 
+Now that you have all the blendshapes renamed and the merged blendshapes working, you can export this file as a fbx 2018 file and import it into Unreal!
 
 
 # Setting Up Our Python Script
@@ -223,7 +224,10 @@ Make sure all three files are in the same folder before you run the script. This
 ![file screen shot](https://i.ibb.co/ynLk4ys/Command-Prompt-runme-bat-6-24-2020-8-21-21-PM.png)
 
 
+# Download Our Repo
 
-# Importing into Unreal
+**3. Importing into Unreal**
+   - You should have our project downloaded or cloned on your computer by this point.
+   - 
 
 
