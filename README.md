@@ -1,4 +1,4 @@
-![Image of rlab](https://i.ibb.co/xFQr6QW/Group-1.png)
+![Image of rlab](https://i.ibb.co/3zsstG6/Group-3.png)
 
 
 # Authors
@@ -195,6 +195,37 @@ Now that you have all the blendshapes renamed and the merged blendshapes working
 
 Be sure to read our setup [here](https://github.com/RLabNYC/RLab_FaceTracking_RenameScripts)
 
+
+Python download here: https://www.python.org/downloads/ **scroll all the way to see how to download properly!
+
+![python screenshot](https://i.ibb.co/5RYbr30/Inkedwin-installer-LI.jpg)
+
+Make sure you check off "Python version number to PATH"
+
+# Installing Pandas
+
+Open the terminal into where python is installed into your computer. In case panda is not installed already.
+
+  - **Run command:**
+
+```
+pip install pandas
+```
+
+# Installing pip
+
+Installing with get-pip.py
+To install pip, securely 1 download get-pip.py by following this link: get-pip.py. Alternatively, use curl:
+
+```
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+```
+
+Then run the following command in the folder where you have downloaded get-pip.py:
+```
+python get-pip.py
+```
+
 ## How To Run Our Script
 
 Here is the link to the files for the [python scripts](https://drive.google.com/file/d/1doMe8WIUbqdsxNHbB--hBKqrz7n8hjyf/view?usp=sharing). After you extract the files from the zip folder, make sure you save the .ma files into this same folder that you created for this tutorial. Then import the Fuse or MakeHuman CSV files into the same folder:
@@ -228,7 +259,93 @@ Make sure all three files are in the same folder before you run the script. This
 
 **3. Importing into Unreal**
    - You should have our project downloaded or cloned on your computer by this point.
-   - 
+   - Once the project is downloaded make sure you save it a place where you can find it easily. Please refer to Unreal’s documentation on setting up the Unreal environment and selecting the map for prototyping. Here is the link again https://docs.unrealengine.com/en-US/Platforms/AR/HandheldAR/FaceARSample/index.html 
+
+      - When you open the faceAR project in Unreal again, import the FBX into Unreal with these settings:
+
+![import screenshot](https://i.ibb.co/fMR6b3m/Screen-Shot-2020-02-10-at-5-05-25-PM.png)
+
+    - Need to make sure that “Import Morph Targets”  is checked off. Once it is imported as a mesh and as skeletal, the import default settings should take care of itself. 
+
+If you need further assistance, refer to this documentation from Unreal: https://docs.unrealengine.com/en-US/Engine/Content/FBX/MorphTargets/index.html
+
+Once it is imported into Unreal. You should be able to open up the skeletal mesh asset and see the renamed blendshapes. Test the sliders to see if they work on the model. 
+
+### Fuse example
+![unreal fuse blendshapes](https://i.ibb.co/6R2XJRH/Annotation-2020-02-11-105608.png)
+
+### Makehuman example
+![ unreal mkhuman blendshapes](https://i.ibb.co/m8K1n8s/Annotation-2020-02-28-115732.png)
+
+If you see an error or the blendshapes are named differently, make sure to double check the grouping name of the blendshapes, this is the group that should be named “Blendshape_mesh” 
+
+![Maya screenshot](https://i.ibb.co/D9QDx1n/Annotation-2020-02-27-110918.png)
+
+In this example, the “Body_ncl1_4” needs to be renamed to Blendshape_mesh
+
+Our repo will have everything set up for you to test the Livelink app on yor phone with our Unreal sample project.
+
+## Enabled plugins in Unreal 
+
+   - Make sure these plugins are enabled in Unreal. 
+  **Livelink** 
+	 - ![plugins](https://i.ibb.co/0Cw2dqh/Rlab-facetracking2-Unreal-Editor-6-29-2020-3-00-28-PM-2.png)
+  **Apple ARkit
+	 - ![Appleplugins](https://i.ibb.co/N1KPM8W/Rlab-facetracking2-Unreal-Editor-6-29-2020-3-00-37-PM-2.png)
+
+  **LiveLink**
+     - Make sure you are able to see your phone
+	 - ![Livelink](https://i.ibb.co/1X9Lftt/Rlab-facetracking2-Unreal-Editor-6-29-2020-3-19-35-PM-2.png)
+
+## Blueprints in Unreal
+
+- Check out our blueprints that should be set up for you already. Make sure our level blue print has a *Start-AR-Session* node connected to *Event Begin Play* 
+- You should see two sample characters in the project. Go into their animation blueprints and see how they are set up. 
+
+Setting up the Blueprints in Unreal
+
+Steps for getting the iPhone to control facial movements in Unreal. 
+Please refer to the documentation from Unreal to setup the face tracking here:
+https://docs.unrealengine.com/en-US/Platforms/AR/HandheldAR/FaceARSample/index.html
+
+Here is a link to Apple’s blendshape guidelines: https://developer.apple.com/documentation/arkit/arfaceanchor/blendshapelocation
+
+   - **Here is a simplified list of the setup:**
+     - Make sure the blendshapes are named correctly. 
+     - Enable face tracking in the Defaultengine.ini file. 
+     - Create and apply the data asset
+     - Create a sessionAR function in the level blueprint 
+     - Create an animation blueprint that connects livelink node and set the name to “iPhoneXFaceAR” exactly. 
+       - Right click in the content browser in an empty space > go to “Animation” > select “Animation blueprint” > Under parent class Select “anim instance” > Under target skeleton select the name of your imported fbx file > click “ok” and rename it and make sure you know where it is. 
+
+  - **Level Blueprint**
+   - ![LevelBlueprint](https://i.ibb.co/Lk6RV6j/RLab-Sample-map-6-29-2020-3-44-14-PM-2.png)
+  - **Animation Blueprint**
+   - **Fuse**
+   - ![Anim blueprint](https://i.ibb.co/dM0D37F/ABP-fuse1-6-29-2020-3-46-53-PM.png)
+   - **Makehuman**
+   - ![Anim blueprint](https://i.ibb.co/YcqsVGN/Rlab-facetracking2-Unreal-Editor-6-29-2020-3-45-28-PM.png)
+
+# Download The App
+
+Look on the app store on your iPhone and download the *LiveLink UE MoCap* app. 
+
+  - Type in your ip adress
+  - To find out what your ip adress is:
+On PC: Open the command line and type in
+```
+ipconfig
+```
+On Mac type in 
+```
+ifconfig
+```
+Or go into your "system preferences" click on "Network" and then you will see the ip address on the right. 
 
 
+# Almost Done! 
 
+  - Make sure your phone and computer are connected on the same network!
+  - On the app click connect and then press play in Unreal, while it's running, you might need to click again on the phone app and you will start to the faces move!
+
+  **Congratualtions!** You just completed facial tracking in Unreal for free!
