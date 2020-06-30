@@ -160,16 +160,16 @@ Under the Plugins for MakeHuman section download MHAPI and Forked MHX2. The Fork
 
 ![Blender import](https://i.ibb.co/4gvR1gm/Blender-6-23-2020-8-21-51-PM-2.png)
 
-    - Export as FBX from Blender. Turn off “Apply Modifiers” in the Geometry section of the FBX export options.
-	- **In Maya from MakeHuman/Blender:**
+  - Export as FBX from Blender. Turn off “Apply Modifiers” in the Geometry section of the FBX export options.
+  - **In Maya from MakeHuman/Blender:**
 After you created the model in Blender, and it is exported as a FBX, open the file in Maya. Make sure to delete the default cube, light, and camera from the Blender scene first.
 
 Once you import the model in Maya you should scale the bone joint size. In the toolbar look for Display > Animation > Joint Size. Scale it down to whatever is comfortable for you. This is to make it easier to see the animation of the blendshapes. 
 
 Then switch the workspace mode to sculpting this will layout the blendshapes in a easier way to see. 
 
-    - **Editing Blendshapes in Maya from MakeHuman:**
-    - Once you make the switch, you will see a bunch of orange targets, these are the blendshapes. You can toggle between how strong you want each target to be for animation purposes. It’s basically like a light dimmer.
+  - **Editing Blendshapes in Maya from MakeHuman:**
+  - Once you make the switch, you will see a bunch of orange targets, these are the blendshapes. You can toggle between how strong you want each target to be for animation purposes. It’s basically like a light dimmer.
 
 ![makehuman blendshapes](https://i.ibb.co/YfqrB1Z/Autodesk-Maya-2018-Educational-Version-untitled-6-23-2020-8-33-46-PM.png)
 
@@ -196,7 +196,7 @@ Now that you have all the blendshapes renamed and the merged blendshapes working
 Be sure to read our setup [here](https://github.com/RLabNYC/RLab_FaceTracking_RenameScripts)
 
 
-Python download here: https://www.python.org/downloads/ **scroll all the way to see how to download properly!
+Python download here: https://www.python.org/downloads/ **scroll all the way to see how to download properly!**
 
 ![python screenshot](https://i.ibb.co/5RYbr30/Inkedwin-installer-LI.jpg)
 
@@ -245,13 +245,22 @@ Make sure all three files are in the same folder before you run the script. This
 
   - **For  WINDOWS Users:**
      - Open the command prompt as admin, you can search for it.
-     - Navigate to the folder with the python scripts (cd into the folder). In the command line, type in: runme.bat
-
+     - Navigate to the folder with the python scripts (cd into the folder). 
+In the command line, type in: 
+```
+runme.bat
+```
   - **For MAC Users:** 
      - open terminal, search for” terminal” in the finder. 
-     - Navigate to the folder where the python scripts live (cd into the folder). Type in: source runme.sh
-     - Once the program runs, make sure to type in: deactivate
-
+     - Navigate to the folder where the python scripts live (cd into the folder). 
+Open the terminal and type in: 
+```
+	source runme.sh
+```
+Once the program runs make sure to type in: 
+```
+deactivate
+```
 ![file screen shot](https://i.ibb.co/ynLk4ys/Command-Prompt-runme-bat-6-24-2020-8-21-21-PM.png)
 
 
@@ -265,7 +274,7 @@ Make sure all three files are in the same folder before you run the script. This
 
 ![import screenshot](https://i.ibb.co/fMR6b3m/Screen-Shot-2020-02-10-at-5-05-25-PM.png)
 
-    - Need to make sure that “Import Morph Targets”  is checked off. Once it is imported as a mesh and as skeletal, the import default settings should take care of itself. 
+  - Need to make sure that “Import Morph Targets”  is checked off. Once it is imported as a mesh and as skeletal, the import default settings should take care of itself. 
 
 If you need further assistance, refer to this documentation from Unreal: https://docs.unrealengine.com/en-US/Engine/Content/FBX/MorphTargets/index.html
 
@@ -288,10 +297,10 @@ Our repo will have everything set up for you to test the Livelink app on yor pho
 ## Enabled plugins in Unreal 
 
    - Make sure these plugins are enabled in Unreal. 
-  **Livelink** 
-	 - ![plugins](https://i.ibb.co/0Cw2dqh/Rlab-facetracking2-Unreal-Editor-6-29-2020-3-00-28-PM-2.png)
-  **Apple ARkit
-	 - ![Appleplugins](https://i.ibb.co/N1KPM8W/Rlab-facetracking2-Unreal-Editor-6-29-2020-3-00-37-PM-2.png)
+   - **Livelink** 
+	  - ![plugins](https://i.ibb.co/0Cw2dqh/Rlab-facetracking2-Unreal-Editor-6-29-2020-3-00-28-PM-2.png)
+   - **Apple ARkit**
+	  - ![Appleplugins](https://i.ibb.co/N1KPM8W/Rlab-facetracking2-Unreal-Editor-6-29-2020-3-00-37-PM-2.png)
 
   **LiveLink**
      - Make sure you are able to see your phone
@@ -305,7 +314,7 @@ Our repo will have everything set up for you to test the Livelink app on yor pho
 Setting up the Blueprints in Unreal
 
 Steps for getting the iPhone to control facial movements in Unreal. 
-Please refer to the documentation from Unreal to setup the face tracking here:
+Please refer to the documentation from Unreal to setup the face tracking from scratch here:
 https://docs.unrealengine.com/en-US/Platforms/AR/HandheldAR/FaceARSample/index.html
 
 Here is a link to Apple’s blendshape guidelines: https://developer.apple.com/documentation/arkit/arfaceanchor/blendshapelocation
@@ -315,16 +324,18 @@ Here is a link to Apple’s blendshape guidelines: https://developer.apple.com/d
      - Enable face tracking in the Defaultengine.ini file. 
      - Create and apply the data asset
      - Create a sessionAR function in the level blueprint 
+
      - Create an animation blueprint that connects livelink node and set the name to “iPhoneXFaceAR” exactly. 
        - Right click in the content browser in an empty space > go to “Animation” > select “Animation blueprint” > Under parent class Select “anim instance” > Under target skeleton select the name of your imported fbx file > click “ok” and rename it and make sure you know where it is. 
 
-  - **Level Blueprint**
+  **Level Blueprint**
    - ![LevelBlueprint](https://i.ibb.co/Lk6RV6j/RLab-Sample-map-6-29-2020-3-44-14-PM-2.png)
-  - **Animation Blueprint**
+ **Animation Blueprint**
    - **Fuse**
    - ![Anim blueprint](https://i.ibb.co/dM0D37F/ABP-fuse1-6-29-2020-3-46-53-PM.png)
-   - **Makehuman**
+  **Makehuman**
    - ![Anim blueprint](https://i.ibb.co/YcqsVGN/Rlab-facetracking2-Unreal-Editor-6-29-2020-3-45-28-PM.png)
+
 
 # Download The App
 
