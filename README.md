@@ -202,7 +202,7 @@ Python download here: https://www.python.org/downloads/ **scroll all the way to 
 
 ![python screenshot](https://i.ibb.co/5RYbr30/Inkedwin-installer-LI.jpg)
 
-Make sure you check off "Python version number to PATH"
+**Make sure you check off "Python version number to PATH"**
 
 # Installing Pandas
 
@@ -274,7 +274,9 @@ deactivate
 
       - When you open the faceAR project in Unreal again, import the FBX into Unreal with these settings:
 
-![import screenshot](https://i.ibb.co/fMR6b3m/Screen-Shot-2020-02-10-at-5-05-25-PM.png)
+![import screenshot](https://i.ibb.co/kX7zdJy/FBX-Import-Options-6-23-2020-8-59-30-PM.png)
+
+
 
   - Need to make sure that “Import Morph Targets”  is checked off. Once it is imported as a mesh and as skeletal, the import default settings should take care of itself. 
 
