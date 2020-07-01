@@ -274,7 +274,7 @@ deactivate
 
       - When you open the faceAR project in Unreal again, import the FBX into Unreal with these settings:
 
-![import screenshot](https://i.ibb.co/kX7zdJy/FBX-Import-Options-6-23-2020-8-59-30-PM.png)
+![import screenshot](https://ibb.co/ZxjvZSJ)
 
   - Need to make sure that “Import Morph Targets”  is checked off. Once it is imported as a mesh and as skeletal, the import default settings should take care of itself. 
 
