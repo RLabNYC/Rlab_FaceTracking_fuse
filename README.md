@@ -302,13 +302,15 @@ Our repo will have everything set up for you to test the Livelink app on yor pho
 
    - Make sure these plugins are enabled in Unreal. 
    - **Livelink** 
-![plugins](https://ibb.co/CwPtXdy)
+![plugins](https://i.ibb.co/j8J5xKY/Rlab-facetracking2-Unreal-Editor-6-29-2020-3-00-28-PM.png)
    - **Apple ARkit**
 ![Appleplugins](https://i.ibb.co/N1KPM8W/Rlab-facetracking2-Unreal-Editor-6-29-2020-3-00-37-PM-2.png)
 
   **LiveLink**
      - Make sure you are able to see your phone
-![Livelink](https://i.ibb.co/1X9Lftt/Rlab-facetracking2-Unreal-Editor-6-29-2020-3-19-35-PM-2.png)
+![Livelink](https://i.ibb.co/02n2Xvq/Rlab-facetracking2-Unreal-Editor-6-29-2020-3-19-35-PM-2.png)
+
+
 
 ## Blueprints in Unreal
 
@@ -338,7 +340,8 @@ Here is a link to Apple’s blendshape guidelines: https://developer.apple.com/d
    - **Fuse**
    - ![Anim blueprint](https://i.ibb.co/dM0D37F/ABP-fuse1-6-29-2020-3-46-53-PM.png)
   **Makehuman**
-   - ![Anim blueprint](https://i.ibb.co/YcqsVGN/Rlab-facetracking2-Unreal-Editor-6-29-2020-3-45-28-PM.png)
+   - ![Anim blueprint](https://i.ibb.co/w7gffd9/Rlab-facetracking2-Unreal-Editor-6-29-2020-3-45-28-PM.png)
+
 
 
 # Download The App
