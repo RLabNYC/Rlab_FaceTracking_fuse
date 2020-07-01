@@ -276,8 +276,6 @@ deactivate
 
 ![import screenshot](https://i.ibb.co/kX7zdJy/FBX-Import-Options-6-23-2020-8-59-30-PM.png)
 
-
-
   - Need to make sure that “Import Morph Targets”  is checked off. Once it is imported as a mesh and as skeletal, the import default settings should take care of itself. 
 
 If you need further assistance, refer to this documentation from Unreal: https://docs.unrealengine.com/en-US/Engine/Content/FBX/MorphTargets/index.html
