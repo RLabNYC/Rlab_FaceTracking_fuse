@@ -302,7 +302,7 @@ Our repo will have everything set up for you to test the Livelink app on yor pho
 
    - Make sure these plugins are enabled in Unreal. 
    - **Livelink** 
-![plugins](https://i.ibb.co/0Cw2dqh/Rlab-facetracking2-Unreal-Editor-6-29-2020-3-00-28-PM-2.png)
+![plugins](https://ibb.co/CwPtXdy)
    - **Apple ARkit**
 ![Appleplugins](https://i.ibb.co/N1KPM8W/Rlab-facetracking2-Unreal-Editor-6-29-2020-3-00-37-PM-2.png)
 
