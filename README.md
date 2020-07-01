@@ -274,7 +274,9 @@ deactivate
 
       - When you open the faceAR project in Unreal again, import the FBX into Unreal with these settings:
 
-![import screenshot](https://ibb.co/ZxjvZSJ)
+![import screenshot](https://i.ibb.co/LnhVCvm/Screen-Shot-2020-02-10-at-5-05-25-PM.png)
+
+
 
   - Need to make sure that “Import Morph Targets”  is checked off. Once it is imported as a mesh and as skeletal, the import default settings should take care of itself. 
 
@@ -306,7 +308,7 @@ Our repo will have everything set up for you to test the Livelink app on yor pho
 
   **LiveLink**
      - Make sure you are able to see your phone
-	 - ![Livelink](https://i.ibb.co/1X9Lftt/Rlab-facetracking2-Unreal-Editor-6-29-2020-3-19-35-PM-2.png)
+![Livelink](https://i.ibb.co/1X9Lftt/Rlab-facetracking2-Unreal-Editor-6-29-2020-3-19-35-PM-2.png)
 
 ## Blueprints in Unreal
 
