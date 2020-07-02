@@ -306,7 +306,7 @@ Our repo will have everything set up for you to test the Livelink app on yor pho
    - **Apple ARkit**
 ![Appleplugins](https://i.ibb.co/N1KPM8W/Rlab-facetracking2-Unreal-Editor-6-29-2020-3-00-37-PM-2.png)
 
-  **LiveLink**
+   - **LiveLink**
      - Make sure you are able to see your phone
 ![Livelink](https://i.ibb.co/02n2Xvq/Rlab-facetracking2-Unreal-Editor-6-29-2020-3-19-35-PM-2.png)
 
@@ -317,7 +317,9 @@ Our repo will have everything set up for you to test the Livelink app on yor pho
 - Check out our blueprints that should be set up for you already. Make sure our level blue print has a *Start-AR-Session* node connected to *Event Begin Play* 
 - You should see two sample characters in the project. Go into their animation blueprints and see how they are set up. 
 
-Setting up the Blueprints in Unreal
+- We have already prepared the sample blueprints for you in this project.
+
+**Use the Unreal documentation for more detailed set up**
 
 Steps for getting the iPhone to control facial movements in Unreal. 
 Please refer to the documentation from Unreal to setup the face tracking from scratch here:
@@ -334,13 +336,13 @@ Here is a link to Apple’s blendshape guidelines: https://developer.apple.com/d
      - Create an animation blueprint that connects livelink node and set the name to “iPhoneXFaceAR” exactly. 
        - Right click in the content browser in an empty space > go to “Animation” > select “Animation blueprint” > Under parent class Select “anim instance” > Under target skeleton select the name of your imported fbx file > click “ok” and rename it and make sure you know where it is. 
 
-  **Level Blueprint**
-   - ![LevelBlueprint](https://i.ibb.co/Lk6RV6j/RLab-Sample-map-6-29-2020-3-44-14-PM-2.png)
- **Animation Blueprint**
+   - **Level Blueprint**
+     - ![LevelBlueprint](https://i.ibb.co/Lk6RV6j/RLab-Sample-map-6-29-2020-3-44-14-PM-2.png)
+   - **Animation Blueprint**
    - **Fuse**
-   - ![Anim blueprint](https://i.ibb.co/dM0D37F/ABP-fuse1-6-29-2020-3-46-53-PM.png)
-  **Makehuman**
-   - ![Anim blueprint](https://i.ibb.co/w7gffd9/Rlab-facetracking2-Unreal-Editor-6-29-2020-3-45-28-PM.png)
+      - ![Anim blueprint](https://i.ibb.co/dM0D37F/ABP-fuse1-6-29-2020-3-46-53-PM.png)
+   - **Makehuman**
+      - ![Anim blueprint](https://i.ibb.co/w7gffd9/Rlab-facetracking2-Unreal-Editor-6-29-2020-3-45-28-PM.png)
 
 
 
