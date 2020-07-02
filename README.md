@@ -319,7 +319,7 @@ Our repo will have everything set up for you to test the Livelink app on yor pho
 
 - We have already prepared the sample blueprints for you in this project.
 
-**Use the Unreal documentation for more detailed set up**
+**Use the Unreal documentation for a more detailed set up.**
 
 Steps for getting the iPhone to control facial movements in Unreal. 
 Please refer to the documentation from Unreal to setup the face tracking from scratch here:
