@@ -195,7 +195,7 @@ Now that you have all the blendshapes renamed and the merged blendshapes working
 
 # Setting Up Our Python Script
 
-Be sure to read our setup [here](https://github.com/RLabNYC/RLab_FaceTracking_RenameScripts)
+## Be sure to read our setup [here](https://github.com/RLabNYC/RLab_FaceTracking_RenameScripts)
 
 
 Python download here: https://www.python.org/downloads/ **scroll all the way to see how to download properly!**
