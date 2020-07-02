@@ -351,7 +351,7 @@ Here is a link to Apple’s blendshape guidelines: https://developer.apple.com/d
 Look on the app store on your iPhone and download the *LiveLink UE MoCap* app. 
 
   - Type in your ip adress
-  - To find out what your ip adress is:
+  - To find out what your IPv4 adress is:
 On PC: Open the command line and type in
 ```
 ipconfig
