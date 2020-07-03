@@ -366,6 +366,8 @@ Here is a link to Apple’s blendshape guidelines: https://developer.apple.com/d
 
 Look on the app store on your iPhone and download the *LiveLink UE MoCap* app. 
 
+![iphone app](https://i.ibb.co/yfx3BPB/Work-flow-for-facial-tracking-Google-Docs-Google-Chrome-7-3-2020-6-32-53-PM.png)
+
   - Type in your ip adress
   - To find out what your IPv4 adress is:
 On PC: Open the command line and type in
