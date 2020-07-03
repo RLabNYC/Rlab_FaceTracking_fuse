@@ -230,10 +230,10 @@ python get-pip.py
 
 ## How To Run Our Script
 
-Here is the link to the files for the [python scripts](https://drive.google.com/file/d/1doMe8WIUbqdsxNHbB--hBKqrz7n8hjyf/view?usp=sharing). After you extract the files from the zip folder, make sure you save the .ma files into this same folder that you created for this tutorial. Then import the Fuse or MakeHuman CSV files into the same folder:
+Here is the link to the files for the [python scripts](https://github.com/RLabNYC/RLab_FaceTracking_RenameScripts/tree/master/PythonSripts). After you extract the files from the zip folder, make sure you save the .ma files into this same folder that you created for this tutorial. Then import the Fuse or MakeHuman CSV files into the same folder:
 
-  - [Fuse CSV](https://drive.google.com/open?id=1xSIUFs7t_SA1iKy8z1C6dZr_NC3nmUk7)
-  - [Make Human CSV](https://drive.google.com/open?id=1_eibyGkDRUnFtG_fo79H6KKyiKjnk3E6)
+  - [Fuse CSV](https://github.com/RLabNYC/RLab_FaceTracking_RenameScripts/tree/master/csv_files)
+  - [Make Human CSV](https://github.com/RLabNYC/RLab_FaceTracking_RenameScripts/tree/master/csv_files)
 
 In order to have the blendshapes register in Unreal, the blendshapes needs to be named in a specific way for Apple’s ARKit to work on the new model. 
 
