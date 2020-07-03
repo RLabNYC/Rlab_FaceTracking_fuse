@@ -3,7 +3,7 @@
 
 # Authors
 
-Todd Bryant, Katt Sullivan and Grant Ng
+Todd Bryant, Kat Sullivan and Grant Ng
 
 # From the RLab!
 
@@ -58,7 +58,7 @@ There are multiple ways to have a fully rigged character and have a facial rig s
 ![mixamo screenshot](https://i.ibb.co/CM961X8/Annotation-2020-02-06-151238.png)
 
    - After you click on send to mixamo, your internet browser will open up and Mixamo will open automatically. Once mixamo’s algorithm is finished rigging your character, you will see two dropdown selections on the bottom of the screen. 
-   
+
    ![mixamo screenshot2](https://i.ibb.co/n30TyF1/Annotation-2020-02-06-151833.png)
 
    - **For the dropdowns:**
@@ -69,7 +69,8 @@ There are multiple ways to have a fully rigged character and have a facial rig s
 Download your character as FBX. It should already be rigged and in a T-Pose.
    - **Mixamo to Maya**
 	  -  Import the FBX into Maya. Choose the Sculpting layout from the top right Workspaces dropdown menu. It will change the layout of Maya to bring up the Blendshapes. This is a screenshot of what the blendshapes will come out as when you open the Fuse FBX file in Maya. You can drag the sliders for each shape and see how it affects the face mesh
-	  
+	
+
 ![maya screenshot](https://i.ibb.co/SXKrGzw/Autodesk-Maya-2018-Educational-Version-untitled-6-24-2020-8-10-18-PM-2.png)
 
    - After the import in done, there are some textures are transparent. It is an easy fix!
@@ -121,8 +122,8 @@ In this example picture you want to select both the Left and Right blendshapes. 
      - The MakeHuman and Blender workflow integrates these two open source software platforms to extract the blendshapes associated with all of the parametric sliders for crafting your avatar.  You’ll need to install two plugins to MakeHuman and one to Blender. Both are free downloads and have robust communities.
   - **Editing Blendshapes in Maya from MakeHuman:**
      - Once you make the switch, you will see a bunch of orange targets, these are the blendshapes. You can toggle between how strong you want each target to be for animation purposes. It’s basically like a light dimmer. 
-  -[Makehuman](http://www.makehumancommunity.org/content/downloads.html) (new link for community [edition](http://download.tuxfamily.org/makehuman/nightly/makehuman-community-1.2.0-alpha4-win32.zip))
-  -[Blender](https://www.blender.org/download/)
+    -[Makehuman](http://www.makehumancommunity.org/content/downloads.html) (new link for community [edition](http://download.tuxfamily.org/makehuman/nightly/makehuman-community-1.2.0-alpha4-win32.zip))
+    -[Blender](https://www.blender.org/download/)
 
 ![make human screen shot](https://i.ibb.co/8zsWQsh/Make-Human-Community-1-2-0-Beta1-HEAD-748a570b-Untitled-6-25-2020-5-08-27-PM.png)
 
@@ -134,8 +135,8 @@ All the plugins needed are [on one page](http://www.makehumancommunity.org/conte
 Under the Plugins for MakeHuman section download MHAPI and Forked MHX2. The Forked MHX2 has both the plugin for MakeHuman and Blender.
 
    - In MakeHuman:
-    - [From the MakeHuman Documentation](http://www.makehumancommunity.org/wiki/FAQ:I_downloaded_a_third_party_plug-in._How_do_I_install_it%3F) 
-    - On PC the Plugins go in the “plugins” folder wherever you installed MakeHuman.
+        - [From the MakeHuman Documentation](http://www.makehumancommunity.org/wiki/FAQ:I_downloaded_a_third_party_plug-in._How_do_I_install_it%3F) 
+        - On PC the Plugins go in the “plugins” folder wherever you installed MakeHuman.
 
 ![mkhu pc set up](https://i.ibb.co/bH5HNKH/Work-flow-for-facial-tracking-Google-Docs-Google-Chrome-6-25-2020-6-36-48-PM-2.png)
 
@@ -198,64 +199,53 @@ Now that you have all the blendshapes renamed and the merged blendshapes working
 ## Be sure to read our setup [here](https://github.com/RLabNYC/RLab_FaceTracking_RenameScripts)
 
 
-Python download here: https://www.python.org/downloads/ **scroll all the way to see how to download properly!**
+If you don't have Python 3, download Python [here](https://www.python.org/downloads/). **Make sure you check off "Python version number to PATH"!** Also be sure to include pip in the installation. (If you don't, details on how to do that are below)
 
 ![python screenshot](https://i.ibb.co/5RYbr30/Inkedwin-installer-LI.jpg)
 
-**Make sure you check off "Python version number to PATH"**
-
-# Installing Pandas
-
-Open the terminal into where python is installed into your computer. In case panda is not installed already.
-
-  - **Run command:**
-
-```
-pip install pandas
-```
-
 # Installing pip
 
-Installing with get-pip.py
-To install pip, securely 1 download get-pip.py by following this link: get-pip.py. Alternatively, use curl:
+If you already have pip installed, please skip this section.
 
-```
-curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-```
+In terminal, cd to where you installed the renaming repository, then cd to the PythonScripts folder.
+To install pip, simply run:
 
-Then run the following command in the folder where you have downloaded get-pip.py:
 ```
 python get-pip.py
 ```
 
-## How To Run Our Script
+# How To Run Our Script
 
-Here is the link to the files for the [python scripts](https://github.com/RLabNYC/RLab_FaceTracking_RenameScripts/tree/master/PythonSripts). After you extract the files from the zip folder, make sure you save the .ma files into this same folder that you created for this tutorial. Then import the Fuse or MakeHuman CSV files into the same folder:
+Here is the link to the files for the [python scripts](https://github.com/RLabNYC/RLab_FaceTracking_RenameScripts/tree/master/PythonSripts).
 
-  - [Fuse CSV](https://github.com/RLabNYC/RLab_FaceTracking_RenameScripts/tree/master/csv_files)
-  - [Make Human CSV](https://github.com/RLabNYC/RLab_FaceTracking_RenameScripts/tree/master/csv_files)
-
-In order to have the blendshapes register in Unreal, the blendshapes needs to be named in a specific way for Apple’s ARKit to work on the new model. 
+The script will take care of any additional python libraries and run the Python renaming script. It will search for a csv file in the PythonScript folder so **be sure you choose either the Fuse.csv or Makehuman.csv file (found in the csv_files folder) and move it inside the PythonScripts folder**. You will also place your Maya file (.ma) into the PythonScripts folder. The script will rewrite the .ma file with the correct naming syntax in order to have the blendshapes register in Unreal. The blendshapes needs to be named in a specific way for Apple’s ARKit to work on the new model.  
 
 
   - The file structure should look this
-![file screen shot](https://i.ibb.co/4SBsmSY/Python-Sripts-6-25-2020-3-40-32-PM-2.png)
+![file screen shot](file_structure_LI.jpg)
 
-You will need to change directory in Terminal or Command Prompt to the folder that your files and Pythons scripts are in. 
 
-Make sure all three files are in the same folder before you run the script. This is basically reading the CSV file and replaces all the fuse blendshape names with the apple blendshape names in the .ma file.
 
-  - **For  WINDOWS Users:**
-     - Open the command prompt as admin, you can search for it.
-     - Navigate to the folder with the python scripts (cd into the folder). 
-In the command line, type in: 
+##### For Windows Users:
+
+Once that is done, be sure to be running command prompt as admin and from the PythonScripts folder run
+
 ```
 runme.bat
 ```
-  - **For MAC Users:** 
-     - open terminal, search for” terminal” in the finder. 
-     - Navigate to the folder where the python scripts live (cd into the folder). 
+
+If you have any pip-related issues try upgrading pip by
+
+```
+py -m pip install --upgrade pip
+```
+
+**For MAC Users:** 
+
+- open terminal, search for” terminal” in the finder. 
+- Navigate to the folder where the python scripts live (cd into the folder). 
 Open the terminal and type in: 
+
 ```
 	source runme.sh
 ```
