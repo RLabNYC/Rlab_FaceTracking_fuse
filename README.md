@@ -290,28 +290,28 @@ Our repo will have everything set up for you to test the Livelink app on yor pho
 
 ## Adding eye movements
 
-   - **How to make eyes move**
-   1. Create a new PoseAsset (Create Asset - Create PoseAsset - Current Pose)
-        - ![1](https://i.ibb.co/SrQ1GS1/1.png)
-   2.  In the PoseAsset, add eye movements. 
-      - a. **To do this:**
-        - **Rotate the eyeball to the position you want the pose to be.**
-	    - ![2](https://i.ibb.co/17XQdy8/2.png)
-	  - b. **Insert Pose to the PoseAsset (Create Asset - Create PoseAsset - Insert Pose - [Choose Your PoseAsset]).**
-	    - ![3](https://i.ibb.co/n82LGtQ/3.png)
-	  - c. **Slide the slidebar of the new pose to 1. The eyeball will now be in an unwanted position, but it’s okay.**
-	    - ![4](https://i.ibb.co/SXkqj35/4.png)
-	  - d. **Rotate the eyeball back to where you want it to be.**
-	    - ![5](https://i.ibb.co/YBH03wc/5.png)
-	  - e. **Slide the slidebar of the new pose back to 0.**
-	    - ![6](https://i.ibb.co/zJzj9GC/6.png)  
-	  - f. **Rename the new pose according to the naming conventions for Apple blendshapes (https://developer.apple.com/documentation/arkit/arfaceanchor/blendshapelocation)**
-	    - ![7](https://i.ibb.co/7Kj9z5P/7.png)
-	  - g. **Do the above for all other poses, the result should look like this:**
-	    - ![8](https://i.ibb.co/28ZtBhM/8.png) 
-		- Note: You should rotate the eyeball to the position you want first, and then insert a new pose. You can delete Pose_0 in the screenshot above.
-	  - h. **Connect the PoseAsset in Animation Blueprint. It should work now.**
-		- ![9](https://i.ibb.co/P9Hq7cr/9.png)
+  **How to make eyes move**
+  1. Create a new PoseAsset (Create Asset - Create PoseAsset - Current Pose)
+        - ![1](https://i.ibb.co/nC3VtpV/1.png)
+  2.  In the PoseAsset, add eye movements. 
+        - a. **To do this:**
+           - **Rotate the eyeball to the position you want the pose to be.**
+	       - ![2](https://i.ibb.co/hLd9ZQD/2.png)
+	    - b. **Insert Pose to the PoseAsset (Create Asset - Create PoseAsset - Insert Pose - [Choose Your PoseAsset]).**
+	       - ![3](https://i.ibb.co/KzZrPSV/3.png)
+	    - c. **Slide the slidebar of the new pose to 1. The eyeball will now be in an unwanted position, but it’s okay.**
+	       - ![4](https://i.ibb.co/QFWsgKp/4.png)
+	    - d. **Rotate the eyeball back to where you want it to be.**
+	       - ![5](https://i.ibb.co/WvmV6jk/5.png)
+	    - e. **Slide the slidebar of the new pose back to 0.**
+	       - ![6](https://i.ibb.co/PQd3XwJ/6.png)  
+	    - f. **Rename the new pose according to the naming conventions for Apple blendshapes (https://developer.apple.com/documentation/arkit/arfaceanchor/blendshapelocation)**
+	       - ![7](https://i.ibb.co/PgFSYnK/7.png)
+	    - g. **Do the above for all other poses, the result should look like this:**
+	       - ![8](https://i.ibb.co/hXYWv9d/8.png) 
+		   - Note: You should rotate the eyeball to the position you want first, and then insert a new pose. You can delete Pose_0 in the screenshot above.
+	    - h. **Connect the PoseAsset in Animation Blueprint. It should work now.**
+		   - ![9](https://i.ibb.co/KLvTM25/9.png)
 
 		
 ## Enabled plugins in Unreal 
