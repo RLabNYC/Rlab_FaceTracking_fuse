@@ -327,7 +327,6 @@ Our repo will have everything set up for you to test the Livelink app on yor pho
 ![Livelink](https://i.ibb.co/02n2Xvq/Rlab-facetracking2-Unreal-Editor-6-29-2020-3-19-35-PM-2.png)
 
 
-
 ## Blueprints in Unreal
 
 - Check out our blueprints that should be set up for you already. Make sure our level blue print has a *Start-AR-Session* node connected to *Event Begin Play* 
@@ -387,3 +386,8 @@ Or go into your "system preferences" click on "Network" and then you will see th
   - On the app click connect and then press play in Unreal, while it's running, you might need to click again on the phone app and you will start to the faces move!
 
   **Congratualtions!** You just completed facial tracking in Unreal for free!
+
+## Editing the blendshapes more in maya
+If you feel that the facial expressions can be exaggerated more you can look into more maya techniques in manipulating the mesh [here](https://youtu.be/iTPxiQVMlbE?t=737).
+You can refer to this tutorial on editing blendshaps with the verticies [here](https://www.youtube.com/watch?v=C29DJYBLh_M&t=155s). 
+
