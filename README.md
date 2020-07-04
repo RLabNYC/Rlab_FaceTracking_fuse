@@ -222,8 +222,8 @@ The script will take care of any additional python libraries and run the Python 
 
 
   - The file structure should look this
-![file screen shot](file_structure_LI.jpg)
-
+![file screen shot](https://i.ibb.co/9h0k8V2/Run-folder-7-3-2020-11-26-30-PM-LI-2.jpg)
+  - You want make sure you match the **fuse.csv** with the **fuse model** from maya and the **makehuman.csv** with the **makehuman model**. 
 
 
 ##### For Windows Users:
