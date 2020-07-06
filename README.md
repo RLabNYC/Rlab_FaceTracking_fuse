@@ -394,7 +394,7 @@ You can refer to this tutorial on editing blendshaps with the verticies [here](h
 
 # Conclusion
 
-Please feel free to add content by pullrequests, we will are three four people managing this repo so our review process will be relatively fast. 
+Please feel free to add content by pullrequests, we are three to four people managing this repo, so our review process will be relatively fast. 
 
   - **Make A Branch**
     - Please create a separate branch for each issue that you're working on. Do not make changes to the default branch (e.g. master, develop) of your fork.
