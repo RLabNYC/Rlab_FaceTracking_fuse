@@ -10,7 +10,7 @@ Todd Bryant, Kat Sullivan, Grant Ng and Jiuxin Zhu
 To learn more about us visit our website [here](https://www.rlab.nyc/)
 
 ## Description
-Now with ARKit and an iPhone with a front-facing True Depth camera you can track your facial features allowing you animate digital avatars. The avatars first have to be prepared with point-level animation called blendshapes.  ARKit uses 52 of these to animate the avatar faces.  3D modelling is a craft that takes a long time to master and setting up all of these blendshapes can be daunting, so we’ve developed a workflow to ease the barrier to get your character up and running in a matter of minutes by levering two free avatar creation tools: Adobe Fuse and MakeHuman. Both programs have more than enough blendshapes to animate a face, the just need to be renamed to the ARKit conventions. We’ve developed a simple script to automate of lot of this process.
+Now with ARKit and an iPhone with a front-facing True Depth camera you can track your facial features allowing you animate digital avatars. The avatars first have to be prepared with point-level animation called blendshapes.  ARKit uses 52 of these to animate the avatar faces.  3D modelling is a craft that takes a long time to master and setting up all of these blendshapes can be daunting, so we’ve developed a workflow to ease the barrier to get your character up and running in a matter of minutes by leveraging two free avatar creation tools: Adobe Fuse and MakeHuman. Both programs have more than enough blendshapes to animate a face, the just need to be renamed to the ARKit conventions. We’ve developed a simple script to automate of lot of this process.
 
 ![gif of me](ft5.gif)
 
@@ -53,7 +53,7 @@ There are multiple ways to have a fully rigged character and have a facial rig s
 
 **1. Exporting blendshapes from Fuse and importing into Maya**
    - **Adobe Fuse to Mixamo:**
-   - Once you have downloaded Fuse, go through the process of creating your custom character. Make your character look however you want. Keep the model simple and avoid facial hair or eyelashes. Once you are at the last step, Fuse has a button at the top of the screen to bring your character into Mixamo. Click on “send to mixamo”
+   - Once you have downloaded Fuse, go through the process of creating your custom character. Make your character look however you want. Keep the model simple and avoid facial hair or eyelashes. Once you are at the last step, Fuse has a button at the top of the screen to bring your character into Mixamo. Click on “send to mixamo”. 
 
 ![mixamo screenshot](https://i.ibb.co/CM961X8/Annotation-2020-02-06-151238.png)
 
@@ -62,19 +62,19 @@ There are multiple ways to have a fully rigged character and have a facial rig s
    ![mixamo screenshot2](https://i.ibb.co/n30TyF1/Annotation-2020-02-06-151833.png)
 
    - **For the dropdowns:**
-     - Make sure facial blendshapes are enabled
+     - Make sure facial blendshapes are enabled.
      - Skeleton LOD 65 is fine for basic movement. 
      - Hit update rig button and you're free to download your character to your computer! 
 
 Download your character as FBX. It should already be rigged and in a T-Pose.
    - **Mixamo to Maya**
-	  -  Import the FBX into Maya. Choose the Sculpting layout from the top right Workspaces dropdown menu. It will change the layout of Maya to bring up the Blendshapes. This is a screenshot of what the blendshapes will come out as when you open the Fuse FBX file in Maya. You can drag the sliders for each shape and see how it affects the face mesh
+	  -  Import the FBX into Maya. Choose the "Sculpting" layout from the top right "Workspaces" dropdown menu. It will change the layout of Maya to bring up the Blendshapes. This is a screenshot of what the blendshapes will come out as when you open the Fuse FBX file in Maya. You can drag the sliders for each shape and see how it affects the face mesh.
 	
 
 ![maya screenshot](https://i.ibb.co/SXKrGzw/Autodesk-Maya-2018-Educational-Version-untitled-6-24-2020-8-10-18-PM-2.png)
 
    - After the import in done, there are some textures are transparent. It is an easy fix!
-	  - In Maya, just switch workspace modes to "maya classic"
+	  - In Maya, just switch workspace modes to "maya classic".
 	  - Then select the mesh and select the attribute editor tab on the far right and select the farthest tab. 
 	  - You will see a transparency slider grayed out. Right click on it and select "break connection".
 	  - And the texture will be fixed! 
@@ -84,9 +84,9 @@ Download your character as FBX. It should already be rigged and in a T-Pose.
 
 ![maya screenshot](https://i.ibb.co/cTY1xX9/Autodesk-Maya-2018-Educational-Version-untitled-6-24-2020-8-12-55-PM-3.png)
 
-   - Apply the fix for all the meshes and switch back the workspace to "sculpting"
+   - Apply the fix for all the meshes and switch back the workspace to "sculpting".
 	  - **Editing Blendshapes in Maya from Fuse:**
-If you select the face mesh, you will see all the targets for the facial movements. Fuse will give you three blendshape groups, the last group is the one you want to focus on. If you change the workspace in maya to Sculpting, you will be able to see the amount of blendshapes easier. 
+If you select the face mesh, you will see all the targets for the facial movements. Fuse will give you three blendshape groups, the last group is the one you want to focus on. If you change the workspace in maya to "Sculpting", you will be able to see the amount of blendshapes easier. 
 
 When you select the blendshape targets you can move the sliders back and forth and you will be able to see eye’s blinking and the mouth opening and closing. Once you have your character all set up in Maya, you can save this file as a Maya Ascii file. Make sure the file is saved with a .ma extension. Make a folder for this project and place this file in it.  For simplicity’s sake use a root directory (D:\BlendshapesFaceTracking) this is  important for the next steps that involve running a python script. 
 
@@ -95,16 +95,16 @@ On the right, you see the name “blendShape1” You can rename these groups lik
 ![Maya screenshot](https://i.ibb.co/D9QDx1n/Annotation-2020-02-27-110918.png)
 
    - **Merging Blendshapes in Fuse:**
-	  - There are three blendshapes that need to be merged in maya, first, you need to identify
-	  - BrowsOuterLower_Lefft and BrowsOuterLower_Right
-	  - MouthNarrow_Left and MouthNarrow_Right
-	  - CheekPuff_Left and CheekPuff_Right
+	  - There are three blendshapes that need to be merged in maya, first, you need to identify.
+	  - BrowsOuterLower_Lefft and BrowsOuterLower_Right.
+	  - MouthNarrow_Left and MouthNarrow_Right.
+	  - CheekPuff_Left and CheekPuff_Right.
 
-Once you can see all the blendshapes, shown in the previous picture, scroll all the way down look for three types 
+Once you can see all the blendshapes, shown in the previous picture, scroll all the way down look for three type.
 
 ![Maya screenshot](https://i.ibb.co/jwNDpVd/Annotation-2020-02-27-125500.png)
 
-In this example picture you want to select both the Left and Right blendshapes. Be sure to drag the toggles all the way to the right and select both Left and Right blendshapes and right click into one of them and select mirror targets. Once it is merged you need to find the name again, and rename it to cheekPuff the name has to be exact!
+In this example picture you want to select both the Left and Right blendshapes. Be sure to drag the toggles all the way to the right and select both Left and Right blendshapes and right click into one of them and select mirror targets. Once it is merged you need to find the name again, and rename it to cheekPuff, the name has to be exact!
 
    - **Repeat the process for all three, then rename the merged blendshape to the names in bold:**
 	 - BrowsOuterLower_Lefft and BrowsOuterLower_Right = **browInnerUp**
@@ -135,12 +135,12 @@ All the plugins needed are [on one page](http://www.makehumancommunity.org/conte
 Under the Plugins for MakeHuman section download MHAPI and Forked MHX2. The Forked MHX2 has both the plugin for MakeHuman and Blender.
 
    - In MakeHuman:
-        - [From the MakeHuman Documentation](http://www.makehumancommunity.org/wiki/FAQ:I_downloaded_a_third_party_plug-in._How_do_I_install_it%3F) 
+        - [From the MakeHuman Documentation](http://www.makehumancommunity.org/wiki/FAQ:I_downloaded_a_third_party_plug-in._How_do_I_install_it%3F).
         - On PC the Plugins go in the “plugins” folder wherever you installed MakeHuman.
 
 ![mkhu pc set up](https://i.ibb.co/bH5HNKH/Work-flow-for-facial-tracking-Google-Docs-Google-Chrome-6-25-2020-6-36-48-PM-2.png)
 
-   - On Mac the Plugins go inside the MakeHuman.app. Navigate to your Applications folder and right-click on your MakeHuman.app and select “Show Package Contents” and then put the plugins in this location. Note that it goes into the plugin folder in Resources, not the Plugin folder in the root Content folder
+   - On Mac the Plugins go inside the MakeHuman.app. Navigate to your Applications folder and right-click on your MakeHuman.app and select “Show Package Contents” and then put the plugins in this location. Note that it goes into the plugin folder in Resources, not the Plugin folder in the root Content folder.
 
 ![mac set up](https://i.ibb.co/DMpjfbW/Work-flow-for-facial-tracking-Google-Docs-Google-Chrome-6-25-2020-6-37-28-PM-2.png)
 
@@ -151,7 +151,7 @@ Under the Plugins for MakeHuman section download MHAPI and Forked MHX2. The Fork
     - Zip up the folder import_runtime_mhx2 and open the Blender application. Go to Edit -> Preferences -> Add-ons. Select “Install” and look for the zipped folder.
 ![blender set up](https://i.ibb.co/khfv10x/Work-flow-for-facial-tracking-Google-Docs-Google-Chrome-6-25-2020-6-59-29-PM-2.png)
 
-    - Exporting from MakeHuman
+    - Exporting from MakeHuman.
     - Create your avatar in MakeHuman. Put your character into a T-Pose before exporting.  Go to Files -> Export and Select MakeHuman Exchange (mhx2), then check the box for Poses on the right Options menu.  Blendshapes are called Targets in MakeHuman and they are used in the Poses.  If you do not see these options, check your plugin installation.
 
 ![Make human export](https://i.ibb.co/vQXVNdX/Work-flow-for-facial-tracking-Google-Docs-Google-Chrome-6-25-2020-7-36-36-PM-2.png)
@@ -176,7 +176,7 @@ Then switch the workspace mode to sculpting this will layout the blendshapes in 
 
 ![makehuman blendshapes](https://i.ibb.co/YfqrB1Z/Autodesk-Maya-2018-Educational-Version-untitled-6-23-2020-8-33-46-PM.png)
 
-When you open up the model in maya, you should see one blendshape group, in this example its called “Body_ncl1_4” rename it to **Blendshape_mesh**
+When you open up the model in maya, you should see one blendshape group, in this example its called “Body_ncl1_4” rename it to **Blendshape_mesh**. 
 
 ![blend shape group](https://i.ibb.co/D9QDx1n/Annotation-2020-02-27-110918.png)
 
@@ -199,7 +199,7 @@ Now that you have all the blendshapes renamed and the merged blendshapes working
 ## Be sure to read our setup [here](https://github.com/RLabNYC/RLab_FaceTracking_RenameScripts)
 
 
-If you don't have Python 3, download Python [here](https://www.python.org/downloads/). **Make sure you check off "Python version number to PATH"!** Also be sure to include pip in the installation. (If you don't, details on how to do that are below)
+If you don't have Python 3, download Python [here](https://www.python.org/downloads/). **Make sure you check off "Python version number to PATH"!** Also be sure to include pip in the installation. (If you don't, details on how to do that are below). 
 
 ![python screenshot](https://i.ibb.co/5RYbr30/Inkedwin-installer-LI.jpg)
 
@@ -221,20 +221,20 @@ Here is the link to the files for the [python scripts](https://github.com/RLabNY
 The script will take care of any additional python libraries and run the Python renaming script. It will search for a csv file in the PythonScript folder so **be sure you choose either the Fuse.csv or Makehuman.csv file (found in the csv_files folder) and move it inside the PythonScripts folder**. You will also place your Maya file (.ma) into the PythonScripts folder. The script will rewrite the .ma file with the correct naming syntax in order to have the blendshapes register in Unreal. The blendshapes needs to be named in a specific way for Apple’s ARKit to work on the new model.  
 
 
-  - The file structure should look this
+  - The file structure should look this. 
 ![file screen shot](https://i.ibb.co/9h0k8V2/Run-folder-7-3-2020-11-26-30-PM-LI-2.jpg)
   - You want make sure you match the **fuse.csv** with the **fuse model** from maya and the **makehuman.csv** with the **makehuman model**. 
 
 
 ##### For Windows Users:
 
-Once that is done, be sure to be running command prompt as admin and from the PythonScripts folder run
+Once that is done, be sure to be running command prompt as admin and from the PythonScripts folder run:
 
 ```
 runme.bat
 ```
 
-If you have any pip-related issues try upgrading pip by
+If you have any pip-related issues try upgrading pip by:
 
 ```
 py -m pip install --upgrade pip
@@ -260,7 +260,7 @@ deactivate
 
 **3. Importing into Unreal**
    - You should have our project downloaded or cloned on your computer by this point.
-   - Once the project is downloaded make sure you save it a place where you can find it easily. Please refer to Unreal’s documentation on setting up the Unreal environment and selecting the map for prototyping. Here is the link again https://docs.unrealengine.com/en-US/Platforms/AR/HandheldAR/FaceARSample/index.html 
+   - Once the project is downloaded make sure you save it a place where you can find it easily. Please refer to Unreal’s documentation on setting up the Unreal environment and selecting the map for prototyping. Here is the link again https://docs.unrealengine.com/en-US/Platforms/AR/HandheldAR/FaceARSample/index.html. 
 
       - When you open the faceAR project in Unreal again, import the FBX into Unreal with these settings:
 
@@ -280,11 +280,11 @@ Once it is imported into Unreal. You should be able to open up the skeletal mesh
 ### Makehuman example
 ![ unreal mkhuman blendshapes](https://i.ibb.co/m8K1n8s/Annotation-2020-02-28-115732.png)
 
-If you see an error or the blendshapes are named differently, make sure to double check the grouping name of the blendshapes, this is the group that should be named “Blendshape_mesh” 
+If you see an error or the blendshapes are named differently, make sure to double check the grouping name of the blendshapes, this is the group that should be named “Blendshape_mesh”. 
 
 ![Maya screenshot](https://i.ibb.co/D9QDx1n/Annotation-2020-02-27-110918.png)
 
-In this example, the “Body_ncl1_4” needs to be renamed to Blendshape_mesh
+In this example, the “Body_ncl1_4” needs to be renamed to Blendshape_mesh. 
 
 Our repo will have everything set up for you to test the Livelink app on yor phone with our Unreal sample project.
 
@@ -345,8 +345,8 @@ Here is a link to Apple’s blendshape guidelines: https://developer.apple.com/d
    - **Here is a simplified list of the setup:**
      - Make sure the blendshapes are named correctly. 
      - Enable face tracking in the Defaultengine.ini file. 
-     - Create and apply the data asset
-     - Create a sessionAR function in the level blueprint 
+     - Create and apply the data asset.
+     - Create a sessionAR function in the level blueprint. 
 
      - Create an animation blueprint that connects livelink node and set the name to “iPhoneXFaceAR” exactly. 
        - Right click in the content browser in an empty space > go to “Animation” > select “Animation blueprint” > Under parent class Select “anim instance” > Under target skeleton select the name of your imported fbx file > click “ok” and rename it and make sure you know where it is. 
@@ -380,7 +380,7 @@ ifconfig
 Or go into your "system preferences" click on "Network" and then you will see the ip address on the right. 
 
 
-# Almost Done! 
+## Almost Done! 
 
   - Make sure your phone and computer are connected on the same network!
   - On the app click connect and then press play in Unreal, while it's running, you might need to click again on the phone app and you will start to the faces move!
@@ -390,4 +390,34 @@ Or go into your "system preferences" click on "Network" and then you will see th
 ## Editing the blendshapes more in maya
 If you feel that the facial expressions can be exaggerated more you can look into more maya techniques in manipulating the mesh [here](https://youtu.be/iTPxiQVMlbE?t=737).
 You can refer to this tutorial on editing blendshaps with the verticies [here](https://www.youtube.com/watch?v=C29DJYBLh_M&t=155s). 
+
+
+# Conclusion
+
+Please feel free to add content by pullrequests, we will are three four people managing this repo so our review process will be relatively fast. 
+
+  - **Make A Branch**
+    - Please create a separate branch for each issue that you're working on. Do not make changes to the default branch (e.g. master, develop) of your fork.
+  - **Push Your Code ASAP**
+    - Push your code as soon as you can. Follow the ["early and often"](https://www.worklytics.co/blog/commit-early-push-often/) rule.
+    - Make a pull request as soon as you can and **mark the title with a "[WIP]"**. You can create a [draft pull request](https://help.github.com/en/articles/about-pull-requests#draft-pull-requests).[Screenshot: How to create draft PR?](https://opensource.creativecommons.org/contributing-code/pr-guidelines/draft_pr.gif). 
+  - **Describe Your Pull Request**
+    - Use the format specified in pull request template for the repository. Populate the stencil completely for maximum verbosity.
+      - Tag the actual issue number by replacing #[issue_number] e.g. #42. This closes the issue when your PR is merged.
+      - Tag the actual issue author by replacing @[author] e.g. @issue_author. This brings the reporter of the issue into the conversation.
+      - Mark the tasks off your checklist by adding an x in the [ ] e.g. [x]. This checks off the boxes in your to-do list. The more boxes you check, the better.
+    - Describe your change in detail. Too much detail is better than too little.
+    - Describe how you tested your change.
+    - Check the Preview tab to make sure the Markdown is correctly rendered and that all tags and references are linked. If not, go back and edit the Markdown.
+    - [Screenshot: Populated pull request](https://opensource.creativecommons.org/contributing-code/pr-guidelines/populated_pr.png).
+  - **Request Review**
+    - Once your PR is ready, remove the "[WIP]" from the title and/or change it from a draft PR to a regular PR.
+    - If a specific reviewer is not assigned automatically, please [request a review](https://help.github.com/en/articles/requesting-a-pull-request-review) from the project maintainer and any other interested parties manually.
+  - **Incorporating feedback**
+    - If your PR gets a 'Changes requested' review, you will need to address the feedback and update your PR by pushing to the same branch. You don't need to close the PR and open a new one.
+    - Be sure to re-request review once you have made changes after a code review.
+    - [Screenshot: How to request re-review?](https://opensource.creativecommons.org/contributing-code/pr-guidelines/rereview.png)
+    - Asking for a re-review makes it clear that you addressed the changes that were requested and that it's waiting on the maintainers instead of the other way round.
+    - [Screenshot: Difference between 'Changes requested' and 'Review required'](https://opensource.creativecommons.org/contributing-code/pr-guidelines/difference.png).
+
 
