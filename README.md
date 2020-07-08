@@ -395,6 +395,8 @@ Or go into your "system preferences" click on "Network" and then you will see th
 ## Editing the blendshapes more in maya
 If you feel that the facial expressions can be exaggerated more you can look into more maya techniques in manipulating the mesh [here](https://youtu.be/iTPxiQVMlbE?t=737).
 You can refer to this tutorial on editing blendshaps with the verticies [here](https://www.youtube.com/watch?v=C29DJYBLh_M&t=155s). 
+### Example of editing the mesh
+![mesh edit](mesh.gif)
 
 
 # Conclusion
