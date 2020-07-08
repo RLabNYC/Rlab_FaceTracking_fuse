@@ -20,10 +20,10 @@ Now with ARKit and an iPhone with a front-facing True Depth camera you can track
 * MakeHuman downloaded here: http://www.makehumancommunity.org/
 * Maya student version download here: https://www.autodesk.com/education/free-software/maya
 * Unreal downloaded here: https://www.unrealengine.com/en-US/get-now/agnostic
-* Python download here: https://www.python.org/downloads/ **scroll all the way to see how to download properly!
+* Python download here: https://www.python.org/downloads/ **scroll all the way to see how to download properly!**
 ### Software versions:
 * Unreal version 4.24 
-* Livelink app for iOS (Requires iOS 12.1 or later)
+* Live Link Face app for iOS (Requires iOS 13.0 or later). Compatable with iPhone, iPad, and iPod touch. 
 * Maya 2018 or 2019
 * Blender 2.83
 * Python 3.8  
