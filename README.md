@@ -368,9 +368,9 @@ Here is a link to Apple’s blendshape guidelines: https://developer.apple.com/d
 
 # Download The App
 
-Look on the app store on your iPhone and download the *LiveLink UE MoCap* app. 
+Look on the app store on your iPhone and download the *Live Link Unreal* app. To Learn more about how to set the connection on your phone go to Unreal's [documentation](https://docs.unrealengine.com/en-US/Engine/Animation/FacialRecordingiPhone/index.html) for further instructions. 
 
-![iphone app](https://i.ibb.co/yfx3BPB/Work-flow-for-facial-tracking-Google-Docs-Google-Chrome-7-3-2020-6-32-53-PM.png)
+![iphone app](livelink.png)
 
   - Type in your ip adress
   - To find out what your IPv4 adress is:
