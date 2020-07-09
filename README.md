@@ -62,7 +62,7 @@ There are multiple ways to have a fully rigged character and have a facial rig s
 
 ![mixamo screenshot](https://i.ibb.co/CM961X8/Annotation-2020-02-06-151238.png)
 
-   - After you click on send to mixamo, your internet browser will open up and Mixamo will open automatically. Once mixamo’s algorithm is finished rigging your character, you will see two dropdown selections on the bottom of the screen. 
+   - After you click on "send to mixamo", your internet browser will open up and Mixamo will open automatically. Once mixamo’s algorithm is finished rigging your character, you will see two dropdown selections on the bottom of the screen. 
 
    ![mixamo screenshot2](https://i.ibb.co/n30TyF1/Annotation-2020-02-06-151833.png)
 
@@ -388,7 +388,7 @@ Or go into your "system preferences" click on "Network" and then you will see th
 ## Almost Done! 
 
   - Make sure your phone and computer are connected on the same network!
-  - On the app click connect and then press play in Unreal, while it's running, you might need to click again on the phone app and you will start to the faces move!
+  - On the app click connect and then press play in Unreal, while it's running, you might need to click again on the phone app and you will start to see the faces move!
 
   **Congratualtions!** You just completed facial tracking in Unreal for free!
 
