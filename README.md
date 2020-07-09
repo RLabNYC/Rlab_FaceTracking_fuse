@@ -13,10 +13,10 @@ To learn more about us visit our website [here](https://www.rlab.nyc/)
 Now with ARKit and an iPhone with a front-facing True Depth camera you can track your facial features allowing you animate digital avatars. The avatars first have to be prepared with point-level animation called blendshapes.  ARKit uses 52 of these to animate the avatar faces.  3D modelling is a craft that takes a long time to master and setting up all of these blendshapes can be daunting, so we’ve developed a workflow to ease the barrier to get your character up and running in a matter of minutes by leveraging two free avatar creation tools: Adobe Fuse and MakeHuman. Both programs have more than enough blendshapes to animate a face, the just need to be renamed to the ARKit conventions. We’ve developed a simple script to automate of lot of this process.
 
 ### Fuse example
-![gif of me](rlabfuse.gif)
+![gif of me](Media/rlabfuse.gif)
 
 ### MakeHuman example
-![gif of me](rlabmkhu.gif)
+![gif of me](Media/rlabmkhu.gif)
 
 
 ### Required Software To Be Installed: 
@@ -370,7 +370,7 @@ Here is a link to Apple’s blendshape guidelines: https://developer.apple.com/d
 
 Look on the app store on your iPhone and download the *Live Link Unreal* app. To Learn more about how to set the connection on your phone go to Unreal's [documentation](https://docs.unrealengine.com/en-US/Engine/Animation/FacialRecordingiPhone/index.html) for further instructions. 
 
-![iphone app](livelink.png)
+![iphone app](Media/livelink.png)
 
   - Type in your ip adress
   - To find out what your IPv4 adress is:
@@ -396,7 +396,7 @@ Or go into your "system preferences" click on "Network" and then you will see th
 If you feel that the facial expressions can be exaggerated more you can look into more maya techniques in manipulating the mesh [here](https://youtu.be/iTPxiQVMlbE?t=737).
 You can refer to this tutorial on editing blendshaps with the verticies [here](https://www.youtube.com/watch?v=C29DJYBLh_M&t=155s). 
 ### Example of editing the mesh
-![mesh edit](mesh.gif)
+![mesh edit](Media/mesh.gif)
 
 
 # Conclusion
