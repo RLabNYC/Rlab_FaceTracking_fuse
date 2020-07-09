@@ -368,7 +368,7 @@ Here is a link to Apple’s blendshape guidelines: https://developer.apple.com/d
 
 # Download The App
 
-Look on the app store on your iPhone and download the *Live Link Unreal* app. To Learn more about how to set the connection on your phone go to Unreal's [documentation](https://docs.unrealengine.com/en-US/Engine/Animation/FacialRecordingiPhone/index.html) for further instructions. 
+Look on the app store on your iPhone and download the *Live Link Face* app. To Learn more about how to set the connection on your phone go to Unreal's [documentation](https://docs.unrealengine.com/en-US/Engine/Animation/FacialRecordingiPhone/index.html) for further instructions. 
 
 ![iphone app](Media/livelink.png)
 
