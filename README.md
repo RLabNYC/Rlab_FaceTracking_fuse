@@ -10,19 +10,21 @@ Todd Bryant, Kat Sullivan, Grant Ng and Jiuxin Zhu
 To learn more about us visit our website [here](https://www.rlab.nyc/)
 
 ## Description
-Now with ARKit and an iPhone with a front-facing True Depth camera you can track your facial features allowing you animate digital avatars. The avatars first have to be prepared with point-level animation called blendshapes.  ARKit uses 52 of these to animate the avatar faces.  3D modelling is a craft that takes a long time to master and setting up all of these blendshapes can be daunting, so we’ve developed a workflow to ease the barrier to get your character up and running in a matter of minutes by leveraging two free avatar creation tools: Adobe Fuse and MakeHuman. Both programs have more than enough blendshapes to animate a face, the just need to be renamed to the ARKit conventions. We’ve developed a simple script to automate of lot of this process.
+Now with ARKit and an iPhone with a front-facing True Depth camera you can track your facial features allowing you animate digital avatars. The avatars first have to be prepared with point-level animation called blendshapes.  ARKit uses 52 of these to animate the avatar faces.  3D modelling is a craft that takes a long time to master and setting up all of these blendshapes can be daunting, so we’ve developed a workflow to ease the barrier to get your character up and running in a matter of minutes by leveraging three free avatar creation tools: Reallusion, Adobe Fuse and MakeHuman. All three programs have more than enough blendshapes to animate a face, they just need to be renamed to the ARKit conventions. We’ve developed a simple script to automate of lot of this process.
 
-### Fuse example (added eye movements)
+### Fuse example (added eye movements) 
 ![gif of me](Media/rlabfuse.gif)
 
-### MakeHuman example
+### MakeHuman example - link to repo [here](https://github.com/RLabNYC/Rlab_FaceTracking_mkhu)
 ![gif of me](Media/rlabmkhu.gif)
+
+### Reallusion example - link to repo [here](https://github.com/RLabNYC/Rlab_FaceTracking_reallusion)
+![gif of me](Media/reallusion.gif)
 
 
 ### Required Software To Be Installed: 
 * Fuse downloaded from here: https://www.adobe.com/products/fuse.html
 * Need to create a mixamo account (Its free!): https://www.mixamo.com/#/
-* MakeHuman downloaded here: http://www.makehumancommunity.org/
 * Maya student version download here: https://www.autodesk.com/education/free-software/maya
 * Unreal downloaded here: https://www.unrealengine.com/en-US/get-now/agnostic
 * Python download here: https://www.python.org/downloads/ **scroll all the way to see how to download properly!**
@@ -40,9 +42,6 @@ This tutorial requires some knowledge of using 3D software and game engine mecha
    - Fuse to Mixamo
    - Mixamo to Maya
    - Editing Blendshapes in Maya from Fuse
-   - MakeHuman to Blender
-   - Blender to Maya
-   - Editing Blendshapes in Maya from MakeHuman
    - Merging Blendshapes
 2. Python Scripting
    - Knowledge and Filestructuring
@@ -121,90 +120,12 @@ In this example picture you want to select both the Left and Right blendshapes. 
 
 **Be sure to save this file as a “.ma” (maya ASCII) file for running python script later on!**
 
-
-**2. Exporting blendshapes from Fuse and importing into Maya**
-  - **Getting the Blendshapes out of MakeHuman/Blender:**
-     - The MakeHuman and Blender workflow integrates these two open source software platforms to extract the blendshapes associated with all of the parametric sliders for crafting your avatar.  You’ll need to install two plugins to MakeHuman and one to Blender. Both are free downloads and have robust communities.
-  - **Editing Blendshapes in Maya from MakeHuman:**
-     - Once you make the switch, you will see a bunch of orange targets, these are the blendshapes. You can toggle between how strong you want each target to be for animation purposes. It’s basically like a light dimmer. 
-    -[Makehuman](http://www.makehumancommunity.org/content/downloads.html) (new link for community [edition](http://download.tuxfamily.org/makehuman/nightly/makehuman-community-1.2.0-alpha4-win32.zip))
-    -[Blender](https://www.blender.org/download/)
-
-![make human screen shot](https://i.ibb.co/8zsWQsh/Make-Human-Community-1-2-0-Beta1-HEAD-748a570b-Untitled-6-25-2020-5-08-27-PM.png)
-
-**Installing the Plugins**
-Once both are installed let’s grab the plugins and turn them on.
-
-All the plugins needed are [on one page](http://www.makehumancommunity.org/content/plugins.html)
-
-Under the Plugins for MakeHuman section download MHAPI and Forked MHX2. The Forked MHX2 has both the plugin for MakeHuman and Blender.
-
-   - In MakeHuman:
-        - [From the MakeHuman Documentation](http://www.makehumancommunity.org/wiki/FAQ:I_downloaded_a_third_party_plug-in._How_do_I_install_it%3F).
-        - On PC the Plugins go in the “plugins” folder wherever you installed MakeHuman.
-
-![mkhu pc set up](https://i.ibb.co/bH5HNKH/Work-flow-for-facial-tracking-Google-Docs-Google-Chrome-6-25-2020-6-36-48-PM-2.png)
-
-   - On Mac the Plugins go inside the MakeHuman.app. Navigate to your Applications folder and right-click on your MakeHuman.app and select “Show Package Contents” and then put the plugins in this location. Note that it goes into the plugin folder in Resources, not the Plugin folder in the root Content folder.
-
-![mac set up](https://i.ibb.co/DMpjfbW/Work-flow-for-facial-tracking-Google-Docs-Google-Chrome-6-25-2020-6-37-28-PM-2.png)
-
-   - Copy the 9_export_mhx2 folder and paste it in the plugins folder where MakeHuman is installed.
-   - Unzip MHAPI and copy the folder 1_mhapi in the same plugins folder where MakeHuman is installed. 
-
- - **In Blender:** 
-    - Zip up the folder import_runtime_mhx2 and open the Blender application. Go to Edit -> Preferences -> Add-ons. Select “Install” and look for the zipped folder.
-![blender set up](https://i.ibb.co/khfv10x/Work-flow-for-facial-tracking-Google-Docs-Google-Chrome-6-25-2020-6-59-29-PM-2.png)
-
-    - Exporting from MakeHuman.
-    - Create your avatar in MakeHuman. Put your character into a T-Pose before exporting.  Go to Files -> Export and Select MakeHuman Exchange (mhx2), then check the box for Poses on the right Options menu.  Blendshapes are called Targets in MakeHuman and they are used in the Poses.  If you do not see these options, check your plugin installation.
-
-![Make human export](https://i.ibb.co/vQXVNdX/Work-flow-for-facial-tracking-Google-Docs-Google-Chrome-6-25-2020-7-36-36-PM-2.png)
-
-  - **Importing into Blender**
-  - Now Open Blender and navigate to File -> Import -> MakeHuman (.mhx2).  On the import window select your file from MakeHuman and Check the box on the right for Override Exported Data.  Under Import Human Type check Face Shapes. Under Rigging choose the Rig Type Humanik.
-
-![Blnder set up](https://i.ibb.co/W54b0YG/blendersetup.png)
-
-![Blender import](https://i.ibb.co/4gvR1gm/Blender-6-23-2020-8-21-51-PM-2.png)
-
-  - Export as FBX from Blender. Turn off “Apply Modifiers” in the Geometry section of the FBX export options.
-  - **In Maya from MakeHuman/Blender:**
-After you created the model in Blender, and it is exported as a FBX, open the file in Maya. Make sure to delete the default cube, light, and camera from the Blender scene first.
-
-Once you import the model in Maya you should scale the bone joint size. In the toolbar look for Display > Animation > Joint Size. Scale it down to whatever is comfortable for you. This is to make it easier to see the animation of the blendshapes. 
-
-Then switch the workspace mode to sculpting this will layout the blendshapes in a easier way to see. 
-
-  - **Editing Blendshapes in Maya from MakeHuman:**
-  - Once you make the switch, you will see a bunch of orange targets, these are the blendshapes. You can toggle between how strong you want each target to be for animation purposes. It’s basically like a light dimmer.
-
-![makehuman blendshapes](https://i.ibb.co/YfqrB1Z/Autodesk-Maya-2018-Educational-Version-untitled-6-23-2020-8-33-46-PM.png)
-
-When you open up the model in maya, you should see one blendshape group, in this example its called “Body_ncl1_4” rename it to **Blendshape_mesh**. 
-
-![blend shape group](https://i.ibb.co/D9QDx1n/Annotation-2020-02-27-110918.png)
-
-   - **Merging Blendshapes in MakeHuman:**
-      - The two blendshapes that need merging are:
-         - mouth_narrow_left and mouth_narrow_right = **mouthPucker**
-         - cheek_balloon_left and cheek_balloon_right = **cheekPuff**
-
-Be sure to rename Brow_squeeze = **browInnerUp**  This one is already merged! But just needs to be a different name so it can work with Apple!!
-
-In maya, you want to locate these two pairs of blendshapes and merge them. In order to merge the two targets correctly you will need to select them both, for example “mouth_narrow_left and mouth_narrow_right” and drag the toggles all the way to the right and right click into them and hit merge.  Once they are merged you need to look for it again and there will only be one name, select it and rename it mouthPucker, it has to be exactly spelled like that.  Repeat the steps for cheek_balloon_left and cheek_balloon_right. 
-
-![merge targets](https://i.ibb.co/jwNDpVd/Annotation-2020-02-27-125500.png)
-
-Now that you have all the blendshapes renamed and the merged blendshapes working, you can export this file as a fbx 2018 file and import it into Unreal!
-
-
 # Setting Up Our Python Script
 
 ## Be sure to read our setup [here](https://github.com/RLabNYC/RLab_FaceTracking_RenameScripts)
 
 
-If you don't have Python 3, download Python [here](https://www.python.org/downloads/). **Make sure you check off "Python version number to PATH"!** Also be sure to include pip in the installation. (If you don't, details on how to do that are below). 
+  2. If you don't have Python 3, download Python [here](https://www.python.org/downloads/). **Make sure you check off "Python version number to PATH"!** Also be sure to include pip in the installation. (If you don't, details on how to do that are below). 
 
 ![python screenshot](https://i.ibb.co/5RYbr30/Inkedwin-installer-LI.jpg)
 
@@ -282,8 +203,6 @@ Once it is imported into Unreal. You should be able to open up the skeletal mesh
 ### Fuse example
 ![unreal fuse blendshapes](https://i.ibb.co/6R2XJRH/Annotation-2020-02-11-105608.png)
 
-### Makehuman example
-![ unreal mkhuman blendshapes](https://i.ibb.co/m8K1n8s/Annotation-2020-02-28-115732.png)
 
 If you see an error or the blendshapes are named differently, make sure to double check the grouping name of the blendshapes, this is the group that should be named “Blendshape_mesh”. 
 
@@ -295,7 +214,7 @@ Our repo will have everything set up for you to test the Livelink app on yor pho
 
 ## Adding eye movements
 
-  **How to make eyes move** (try this out on our sample makehuman model). 
+  **How to make eyes move** (try this out on our sample makehuman or reallusion model). 
   1. Create a new PoseAsset (Create Asset - Create PoseAsset - Current Pose)
         - ![1](https://i.ibb.co/nC3VtpV/1.png)
   2.  In the PoseAsset, add eye movements. 
@@ -361,8 +280,7 @@ Here is a link to Apple’s blendshape guidelines: https://developer.apple.com/d
    - **Animation Blueprint**
    - **Fuse**
       - ![Anim blueprint](https://i.ibb.co/dM0D37F/ABP-fuse1-6-29-2020-3-46-53-PM.png)
-   - **Makehuman**
-      - ![Anim blueprint](https://i.ibb.co/w7gffd9/Rlab-facetracking2-Unreal-Editor-6-29-2020-3-45-28-PM.png)
+   
 
 
 
@@ -374,6 +292,7 @@ Look on the app store on your iPhone and download the *Live Link Face* app. To L
 
   - Type in your ip adress
   - To find out what your IPv4 adress is:
+
 On PC: Open the command line and type in
 ```
 ipconfig
@@ -398,8 +317,9 @@ You can refer to this tutorial on editing blendshaps with the verticies [here](h
 ### Example of editing the mesh
 ![mesh edit](Media/mesh.gif)
 
-
 # Conclusion
+
+### Pull request guidelines
 
 Please feel free to add content by pullrequests, we are three to four people managing this repo, so our review process will be relatively fast. 
 
