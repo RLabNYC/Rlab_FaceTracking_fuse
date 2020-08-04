@@ -11,7 +11,7 @@ Once you have the window open, select the python tab. If you do not see one, hit
 
 
 
-```
+```Python
 import maya.cmds
 
 def rename_morph_targets( node_name, attr_dict, quiet = False ):
