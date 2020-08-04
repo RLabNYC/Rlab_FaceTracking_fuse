@@ -9,7 +9,7 @@ There are no plugins required for this step. To use this script you want to open
 Once you have the window open, select the python tab. If you do not see one, hit the "+" and choose python and the tab will have the label Python. 
 
 
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ```Python
 import maya.cmds
@@ -69,3 +69,5 @@ attr_dict = { 'brow_outer_down_left': 'eyeBlinkLeft',
 node_name = 'CC_Base_Body_ncl1_1'or '' # Name of the blendshapes
 rename_morph_targets( node_name, attr_dict )
 ```
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
