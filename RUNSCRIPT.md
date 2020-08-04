@@ -1,4 +1,4 @@
-'''
+```
 import maya.cmds
 
 def rename_morph_targets( node_name, attr_dict, quiet = False ):
@@ -55,4 +55,4 @@ attr_dict = { 'brow_outer_down_left': 'eyeBlinkLeft',
 
 node_name = 'CC_Base_Body_ncl1_1'or '' # Name of the blendshapes
 rename_morph_targets( node_name, attr_dict )
-'''
+```
