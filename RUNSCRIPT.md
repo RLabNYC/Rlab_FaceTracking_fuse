@@ -1,3 +1,16 @@
+# Running the script in Maya
+This step is after you completed designing your 3D character in your specific software of your choosing. 
+
+# Using Python in Maya
+There are no plugins required for this step. To use this script you want to open Maya and open the script editor at the bottom
+
+![Screenshot](maya script screenshot)
+
+Once you have the window open, select the python tab. If you do not see one, hit the "+" and choose python and the tab will have the label Python. 
+
+
+
+
 ```
 import maya.cmds
 
