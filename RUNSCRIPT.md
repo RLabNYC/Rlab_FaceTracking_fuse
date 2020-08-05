@@ -89,7 +89,7 @@ attr_dict = { 'Blink_Left': 'eyeBlinkLeft',
 		'Smile_Right': 'mouthDimpleRight',
                 'Squint_Right': 'eyeBlinkSquintLeft'  }
 
-node_name = 'CC_Base_Body_ncl1_1' # Insert Blendshape_whatever name of the blendshape between the quotes!!
+node_name = '' # Insert Blendshape_whatever name of the blendshape between the quotes!!
 rename_morph_targets( node_name, attr_dict )
 ```
 
