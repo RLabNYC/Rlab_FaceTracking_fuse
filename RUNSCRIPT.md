@@ -3,9 +3,9 @@
 This step is after you completed designing your 3D character in your specific software of your choosing. 
 
 # Using Python in Maya
-There are no plugins required for this step. To use this script you want to open Maya and open the script editor at the bottom
+There are no plugins required for this step. To use this script you want to open Maya and open the script editor at the bottom right. 
 
-![Screenshot](maya script screenshot)
+![Screenshot](https://i.ibb.co/5n74QHS/Screenshot-103-LI.jpg)
 
 Once you have the window open, select the python tab. If you do not see one, hit the "+" and choose python and the tab will have the label Python. 
 
@@ -14,11 +14,11 @@ Now once you name your blendshape group is changed to "Blendshape_mesh" and all 
 ![Maya screenshot](https://i.ibb.co/D9QDx1n/Annotation-2020-02-27-110918.png)
 
 
-Just copy and paste this code into the maya script editor
+Once you open the script editor there should be a MEL tab and a Python tab. Open the MEL and just copy and paste the code below into the maya script editor
 
-![mayascript eiditor]()
+![mayascript eiditor](https://i.ibb.co/bBt5vZV/Screenshot-105.png)
 
-Be sure to choose
+ 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
