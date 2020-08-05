@@ -1,3 +1,4 @@
+
 # Running the script in Maya
 This step is after you completed designing your 3D character in your specific software of your choosing. 
 
@@ -8,6 +9,16 @@ There are no plugins required for this step. To use this script you want to open
 
 Once you have the window open, select the python tab. If you do not see one, hit the "+" and choose python and the tab will have the label Python. 
 
+Now once you name your blendshape group is changed to "Blendshape_mesh" and all the necessary targets are merged you can run our script!
+
+![Maya screenshot](https://i.ibb.co/D9QDx1n/Annotation-2020-02-27-110918.png)
+
+
+Just copy and paste this code into the maya script editor
+
+![mayascript eiditor]()
+
+Be sure to choose
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -47,27 +58,45 @@ def rename_morph_targets( node_name, attr_dict, quiet = False ):
 		for name in fail_list:
 			print name
 
-attr_dict = { 'brow_outer_down_left': 'eyeBlinkLeft',
-                'brow_outer_down_right': 'eyeBlinkRight',
-                'brow_mid_down_left': 'browDownLeft',
-                'brow_mid_down_right': 'browDownRight',
-                'brow_outer_up_left': 'browOuterUpLeft',
-                'brow_outer_up_right': 'browOuterUpRight',
-                'mouth_down_left': 'mouthFrownLeft',
-                'mouth_down_right': 'mouthFrownRight',
-                'mouth_open': 'jawOpen',
-                'mouth_down_left': 'jawLeft',
-                'mouth_down_right': 'jawRight',
-                'mouth_corner_down_left': 'mouthLowerDownLeft',
-                'mouth_corner_down_right': 'mouthLowerDownRight', 
-                'mouth_corner_in_left': 'mouthLeft',
-                'mouth_corner_in_right': 'mouthRight',
-                'lips_mid_lower_up_left': 'mouthUpperUpLeft',
-                'lips_mid_lower_up_right': 'mouthUpperUpRight',
-                'brow_squeeze': 'browInnerUp'  }
+attr_dict = { 'Blink_Left': 'eyeBlinkLeft',
+                'Blink_Right': 'eyeBlinkRight',
+                'BrowsDown_Left': 'browDownLeft',
+                'BrowsDown_Right': 'browDownRight',
+                'BrowsUp_Left': 'browOuterUpLeft',
+                'BrowsUp_Right': 'browOuterUpRight',
+                'Frown_Left': 'mouthFrownLeft',
+                'Frown_Right': 'mouthFrownRight',
+                'Jaw_Down': 'jawOpen',
+                'Jaw_Left': 'jawLeft',
+                'Jaw_Right': 'jawRight',
+		'Jaw_Up': 'mouthClose',
+                'LowerLipDown_Left': 'mouthLowerDownLeft',
+                'LowerLipDown_Right': 'mouthLowerDownRight', 
+		'NoseScrunch_Left': 'noseSneerLeft',
+		'NoseScrunch_Right': 'noseSneerRight',
+                'SmileLeft': 'mouthLeft',
+                'SmileRight': 'mouthRight',
+                'UpperLipUp_Left': 'mouthUpperUpLeft',
+                'UpperLipUp_Right': 'mouthUpperUpRight',
+		'UpperLipIn': 'mouthUpperUpRight',
+		'LowerLipIn': 'mouthRollUpper',
+		'MidMouth_Right': 'mouthRight',
+		'MidMouth_Left': 'mouthLeft',
+		'EyesWide_Left': 'eyeWideLeft',
+		'EyesWide_Right': 'eyeWideRight',
+		'Squint_Leftt': 'eyeBlinkSquintRight',
+		'Smile_Left': 'mouthDimpleLeft',
+		'Smile_Right': 'mouthDimpleRight',
+                'Squint_Right': 'eyeBlinkSquintLeft'  }
 
-node_name = 'CC_Base_Body_ncl1_1'or '' # Name of the blendshapes
+node_name = 'CC_Base_Body_ncl1_1' # Insert Blendshape_whatever name of the blendshape between the quotes!!
 rename_morph_targets( node_name, attr_dict )
 ```
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# After blendshape targets are renamed you can export this model as a FBX and import into Unreal! The next steps are [here](https://github.com/RLabNYC/Rlab_FaceTracking_fuse/blob/master/IMPORTING.md)
+
+If you need to go back to the table of [contents](https://github.com/RLabNYC/RLab_Facetracking) For the Fuse modeling steps [here](https://github.com/RLabNYC/RLab_Facetracking)
+
+
