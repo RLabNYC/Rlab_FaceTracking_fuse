@@ -31,7 +31,7 @@ Once the code executes, the specific target blendshapes should have changed to c
 
 Like so in this screenshot. 
 
-![Blendshaperename](https://i.ibb.co/2k4VDz2/Postexecution.jpg)
+![Blendshaperename](Media/blendshape.jpg)
 
 **Now scroll all the way down this page to see the next steps!**
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
