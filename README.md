@@ -62,7 +62,7 @@ Download your character as FBX. It should already be rigged and in a T-Pose.
 
 ## Exporting and setting up our python script in Maya will be the next steps!
 
-## Link back to table of Content [Here](https://github.com/RLabNYC/RLab_Facetracking)
+## Link back to table of Content [Here](https://github.com/RLabNYC/Rlab_FaceTracking_fuse)
 
 # For renaming blendshapes and importing into Unreal go to our [Next Steps](https://github.com/RLabNYC/Rlab_FaceTracking_fuse/blob/master/RUNSCRIPT.md).
 
