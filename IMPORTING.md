@@ -127,6 +127,11 @@ Or go into your "system preferences" click on "Network" and then you will see th
 
   **Congratualtions!** You just completed facial tracking in Unreal for free!
 
+## If you encountered an error refer back to the previous steps, if you need to! 
+
+## If you need to go back to the table of [contents](https://github.com/RLabNYC/RLab_Facetracking). For the Python scripts steps go [here](https://github.com/RLabNYC/Rlab_FaceTracking_fuse/blob/master/RUNSCRIPT.md)
+
+
 ## Editing the blendshapes more in maya
 If you feel that the facial expressions can be exaggerated more you can look into more maya techniques in manipulating the mesh [here](https://youtu.be/iTPxiQVMlbE?t=737).
 You can refer to this tutorial on editing blendshaps with the verticies [here](https://www.youtube.com/watch?v=C29DJYBLh_M&t=155s). 
@@ -134,6 +139,8 @@ You can refer to this tutorial on editing blendshaps with the verticies [here](h
 ![mesh edit](Media/mesh.gif)
 
 # Conclusion
+
+
 
 ### Pull request guidelines
 
