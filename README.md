@@ -106,6 +106,6 @@ In this example picture you want to select both the Left and Right blendshapes. 
 
 ## Link back to table of Content [Here](https://github.com/RLabNYC/RLab_Facetracking)
 
-## [Next Steps](https://github.com/RLabNYC/Rlab_FaceTracking_fuse/blob/master/RUNSCRIPT.md) for renaming blendshapes and importing into Unreal. 
+# For renaming blendshapes and importing into Unreal go to our [Next Steps](https://github.com/RLabNYC/Rlab_FaceTracking_fuse/blob/master/RUNSCRIPT.md).
 
 
