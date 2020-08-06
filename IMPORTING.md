@@ -138,7 +138,19 @@ You can refer to this tutorial on editing blendshaps with the verticies [here](h
 ### Example of editing the mesh
 ![mesh edit](Media/mesh.gif)
 
+
 # Conclusion
+
+There are a lot more other 3D software to create your avatars with out there. Some have a trial subcription others have: 
+
+[Daz3D](https://www.daz3d.com/get_studio/)
+ - Daz has a lot of lot of assets use in their studio and it can export to Blender, Maya, 3ds max, and Cinema4D 
+
+## Next steps for you
+ - Some areas to build off from this tutorial would be to more textures and material to your character.
+ - Adding hair and clothing and having it move in real time would be great next steps to dive into. Here is a [link](https://www.youtube.com/watch?v=9FYgoPZAZRA&list=TLPQMDYwODIwMjDv7CDRqBva0w&index=5) on applying hair on a avatar. Here is a [link](https://www.youtube.com/watch?v=9nLz4yTzbtw&t=454s) to create hair in Maya. 
+   - Here are some links for more inspiration:
+   - Matt Workman has a lot post on [facial tracking](https://www.youtube.com/watch?v=bf07hCA3Co0) and [virtual production](https://www.youtube.com/watch?v=C-M_GEKKmfU&t=21s)
 
 
 
