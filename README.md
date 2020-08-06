@@ -102,10 +102,10 @@ In this example picture you want to select both the Left and Right blendshapes. 
 
 ![Maya screenshot](https://i.ibb.co/2dZDwgv/Autodesk-Maya-2018-Educational-Version-E-Python-Sripts-Python-Sripts-fuse-RLab-ma-6-24-2020-8-23-29-PM-2.png)
 
-# Setting Up Our Python Script in Maya will be the next steps!
+## Setting Up Our Python Script in Maya will be the next steps!
 
 ## Link back to table of Content [Here](https://github.com/RLabNYC/RLab_Facetracking)
 
-## Be sure to read our setup [here](https://github.com/RLabNYC/Rlab_FaceTracking_fuse/blob/master/RUNSCRIPT.md) for the next steps in renaming blendshapes for importing in Unreal. 
+## [Next Steps](https://github.com/RLabNYC/Rlab_FaceTracking_fuse/blob/master/RUNSCRIPT.md) for renaming blendshapes and importing into Unreal. 
 
 
