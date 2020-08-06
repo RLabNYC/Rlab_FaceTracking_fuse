@@ -70,7 +70,7 @@ Now once you name your blendshape group is changed to "Blendshape_mesh" and all 
 
 # Running Python
 
-Once you open the script editor there should be a MEL tab and a Python tab. Open the MEL and just copy and paste the code below into the maya script editor
+Once you open the script editor there should be a MEL tab and a Python tab. If not you can hit the "+" on the far right of the tabs and select "Python". Open the Python tab and just copy and paste the code below into the maya script editor
 
 ![mayascript eiditor](https://i.ibb.co/bBt5vZV/Screenshot-105.png)
 
