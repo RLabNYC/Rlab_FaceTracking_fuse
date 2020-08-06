@@ -15,7 +15,6 @@ Here is our example of how the **Fuse** character will move and look like. **Be 
 
 ![gif of me](Media/rlabfuse.gif)
 
-We have made other repos that incorporate other free 3D modeling softwares as well, please check them out! 
 
 ### Required Software To Be Installed: 
 * Fuse downloaded from here: https://www.adobe.com/products/fuse.html
@@ -31,8 +30,15 @@ This tutorial requires some knowledge of using 3D software and game engine mecha
 
 # Importing and Exporting free 3D characters blendshapes with Maya
 
-First steps you need to have the LiveLink app downloaded onto your iPhone before you start this tutorial. Then download or clone this repository somewhere on your computer. 
-There are multiple ways to have a fully rigged character and have a facial rig set up in minutes. 
+### For experienced individuals only!
+If you are an already experienced in facial tracking, you can download this repo and it will be ready to work with the livelink app already!
+
+# For Beginners
+ - This repo is mainly for beginners who want to get into facetracking for personal projects, virtual production or just for fun. Please keep in mind that this repo is for the Unreal engine. 
+
+ - First, you need to have the LiveLink app downloaded onto your iPhone before you start this tutorial. Then download or clone this repository somewhere on your computer. There are multiple ways to have a fully rigged character and have a facial rig set up in minutes. 
+
+# Setting up with Fuse
 
 **1. Exporting blendshapes from Fuse and importing into Maya**
    - **Adobe Fuse to Mixamo:**
