@@ -50,6 +50,7 @@ If you are an already experienced in facial tracking, you can download this repo
 
    ![mixamo screenshot2](https://i.ibb.co/n30TyF1/Annotation-2020-02-06-151833.png)
 
+# Exporting the blendshapes
    - **For the dropdowns:**
      - Make sure facial blendshapes are enabled.
      - Skeleton LOD 65 is fine for basic movement. 
