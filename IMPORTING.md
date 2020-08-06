@@ -1,3 +1,9 @@
+# Software that should be downloaded already by this page
+* Unreal version 4.25 
+* Unreal downloaded here: https://www.unrealengine.com/en-US/get-now/agnostic
+* Live Link Face app for iOS (Requires iOS 13.0 or later). Compatable with iPhone, iPad, and iPod touch. 
+
+
 # Import to Game Engines
 This section assumes you have already created your 3D character in your choosen software. These next steps will walk you through how to import your model into the Unreal engine. Our Unity import will be coming soon! 
 

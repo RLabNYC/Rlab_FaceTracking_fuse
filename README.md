@@ -9,35 +9,23 @@ Todd Bryant, Kat Sullivan, Grant Ng and Jiuxin Zhu
 
 To learn more about us visit our website [here](https://www.rlab.nyc/)
 
-## Description
-Now with ARKit and an iPhone with a front-facing True Depth camera you can track your facial features allowing you animate digital avatars. The avatars first have to be prepared with point-level animation called blendshapes.  ARKit uses 52 of these to animate the avatar faces.  3D modelling is a craft that takes a long time to master and setting up all of these blendshapes can be daunting, so we’ve developed a workflow to ease the barrier to get your character up and running in a matter of minutes by leveraging three free avatar creation tools: Reallusion, Adobe Fuse and MakeHuman. All three programs have more than enough blendshapes to animate a face, they just need to be renamed to the ARKit conventions. We’ve developed a simple script to automate of lot of this process.
-
 ## Fuse example (added eye movements) 
 
-Here is our example of how the **Fuse** character will move and look like. **Be aware, Fuse will be discontinued by the end of July 2020**
+Here is our example of how the **Fuse** character will move and look like. **Be aware, Fuse will be discontinued by September 2020**
 
 ![gif of me](Media/rlabfuse.gif)
 
 We have made other repos that incorporate other free 3D modeling softwares as well, please check them out! 
-
-### MakeHuman example - link to repo [here](https://github.com/RLabNYC/Rlab_FaceTracking_mkhu)
-
-
-### Reallusion example - link to repo [here](https://github.com/RLabNYC/Rlab_FaceTracking_reallusion)
-
-## Link back to table of Content [Here](https://github.com/RLabNYC/RLab_Facetracking)
 
 ### Required Software To Be Installed: 
 * Fuse downloaded from here: https://www.adobe.com/products/fuse.html
 * Need to create a mixamo account (Its free!): https://www.mixamo.com/#/
 * Maya student version download here: https://www.autodesk.com/education/free-software/maya
 * Unreal downloaded here: https://www.unrealengine.com/en-US/get-now/agnostic
-* Python download here: https://www.python.org/downloads/ **scroll all the way to see how to download properly!**
 ### Software versions:
 * Unreal version 4.25 
 * Live Link Face app for iOS (Requires iOS 13.0 or later). Compatable with iPhone, iPad, and iPod touch. 
-* Maya 2018 or 2019
-* Python 3.8  
+* Maya 2018 or 2019 
 
 This tutorial requires some knowledge of using 3D software and game engine mechanics. We will provide more links for beginners that walk you through a more in depth overview. 
 
@@ -108,7 +96,9 @@ In this example picture you want to select both the Left and Right blendshapes. 
 
 ![Maya screenshot](https://i.ibb.co/2dZDwgv/Autodesk-Maya-2018-Educational-Version-E-Python-Sripts-Python-Sripts-fuse-RLab-ma-6-24-2020-8-23-29-PM-2.png)
 
-# Setting Up Our Python Script in Maya
+# Setting Up Our Python Script in Maya will the next steps!
+
+## Link back to table of Content [Here](https://github.com/RLabNYC/RLab_Facetracking)
 
 ## Be sure to read our setup [here](https://github.com/RLabNYC/Rlab_FaceTracking_fuse/blob/master/RUNSCRIPT.md) for the next steps in renaming blendshapes for importing in Unreal. 
 

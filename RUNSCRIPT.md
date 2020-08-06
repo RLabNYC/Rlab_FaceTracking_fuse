@@ -1,4 +1,9 @@
 
+# Software that should be downloaded already by this page
+* Maya 2018 or 2019
+* Maya student version download here: https://www.autodesk.com/education/free-software/maya
+* Fuse downloaded from here: https://www.adobe.com/products/fuse.html
+
 # Running the script in Maya
 This step is after you completed designing your 3D character in your specific software of your choosing. 
 
