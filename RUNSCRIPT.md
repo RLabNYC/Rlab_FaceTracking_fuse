@@ -114,7 +114,11 @@ rename_morph_targets( node_name, attr_dict )
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# After blendshape targets are renamed you can export this model as a FBX and import into Unreal! The next steps are [here](https://github.com/RLabNYC/Rlab_FaceTracking_fuse/blob/master/IMPORTING.md)
+### After blendshape targets are renamed you can export this model as a FBX and import into Unreal! 
+
+**You can go to file > Export all > make sure the file type is FBX and then save it to a location on your computer.**
+
+# The next steps are [here](https://github.com/RLabNYC/Rlab_FaceTracking_fuse/blob/master/IMPORTING.md)
 
 ## If you need to go back to the table of [contents](https://github.com/RLabNYC/RLab_Facetracking). For the Fuse modeling steps go [here](https://github.com/RLabNYC/RLab_Facetracking)
 
