@@ -13,13 +13,27 @@ Now once you name your blendshape group is changed to "Blendshape_mesh" and all 
 
 ![Maya screenshot](https://i.ibb.co/D9QDx1n/Annotation-2020-02-27-110918.png)
 
+# Using Python
 
 Once you open the script editor there should be a MEL tab and a Python tab. Open the MEL and just copy and paste the code below into the maya script editor
 
 ![mayascript eiditor](https://i.ibb.co/bBt5vZV/Screenshot-105.png)
 
- 
+Then scroll all the down the code until you see a some yellow and red words, please refer to the screenshot below.
 
+![blendshape rename](https://i.ibb.co/hB0pktX/Screenshot-104.png)
+
+Next, you want insert the "Blendshape_whatever" name in between the '' after you type in the name, you can hit the execute all button at the top.
+
+![excutescreenshot](https://i.ibb.co/0cQm23M/Execute.jpg)
+
+Once the code executes, the specific target blendshapes should have changed to camel case naming convention.
+
+Like so in this screenshot. 
+
+![Blendshaperename](https://i.ibb.co/2k4VDz2/Postexecution.jpg)
+
+**Now scroll all the way down this page to see the next steps!**
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ```Python
@@ -97,6 +111,6 @@ rename_morph_targets( node_name, attr_dict )
 
 # After blendshape targets are renamed you can export this model as a FBX and import into Unreal! The next steps are [here](https://github.com/RLabNYC/Rlab_FaceTracking_fuse/blob/master/IMPORTING.md)
 
-If you need to go back to the table of [contents](https://github.com/RLabNYC/RLab_Facetracking) For the Fuse modeling steps [here](https://github.com/RLabNYC/RLab_Facetracking)
+## If you need to go back to the table of [contents](https://github.com/RLabNYC/RLab_Facetracking). For the Fuse modeling steps go [here](https://github.com/RLabNYC/RLab_Facetracking)
 
 
