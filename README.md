@@ -51,59 +51,16 @@ If you are an already experienced in facial tracking, you can download this repo
    ![mixamo screenshot2](https://i.ibb.co/n30TyF1/Annotation-2020-02-06-151833.png)
 
 # Exporting the blendshapes
+
    - **For the dropdowns:**
      - Make sure facial blendshapes are enabled.
      - Skeleton LOD 65 is fine for basic movement. 
      - Hit update rig button and you're free to download your character to your computer! 
 
 Download your character as FBX. It should already be rigged and in a T-Pose.
-   - **Mixamo to Maya**
-	  -  Import the FBX into Maya. Choose the "Sculpting" layout from the top right "Workspaces" dropdown menu. It will change the layout of Maya to bring up the Blendshapes. This is a screenshot of what the blendshapes will come out as when you open the Fuse FBX file in Maya. You can drag the sliders for each shape and see how it affects the face mesh.
-	
+   
 
-![maya screenshot](https://i.ibb.co/SXKrGzw/Autodesk-Maya-2018-Educational-Version-untitled-6-24-2020-8-10-18-PM-2.png)
-
-   - After the import in done, there are some textures are transparent. It is an easy fix!
-	  - In Maya, just switch workspace modes to "maya classic".
-	  - Then select the mesh and select the attribute editor tab on the far right and select the farthest tab. 
-	  - You will see a transparency slider grayed out. Right click on it and select "break connection".
-	  - And the texture will be fixed! 
-	  
-
-![maya screenshot](https://i.ibb.co/3BWk5bL/Autodesk-Maya-2018-Educational-Version-untitled-6-24-2020-8-12-06-PM-2.png)
-
-![maya screenshot](https://i.ibb.co/cTY1xX9/Autodesk-Maya-2018-Educational-Version-untitled-6-24-2020-8-12-55-PM-3.png)
-
-   - Apply the fix for all the meshes and switch back the workspace to "sculpting".
-	  - **Editing Blendshapes in Maya from Fuse:**
-If you select the face mesh, you will see all the targets for the facial movements. Fuse will give you three blendshape groups, the last group is the one you want to focus on. If you change the workspace in maya to "Sculpting", you will be able to see the amount of blendshapes easier. 
-
-When you select the blendshape targets you can move the sliders back and forth and you will be able to see eye’s blinking and the mouth opening and closing. Once you have your character all set up in Maya, you can save this file as a Maya Ascii file. Make sure the file is saved with a .ma extension. Make a folder for this project and place this file in it.  For simplicity’s sake use a root directory (D:\BlendshapesFaceTracking) this is  important for the next steps that involve running a python script. 
-
-On the right, you see the name “blendShape1” You can rename these groups like  “_ncl1_1”. The group of **“_ncl1_2”** is where most of the animations are. You need to rename the groups with circle square icons and a little “ +” sign next to it like “_ncl1_2” to Blendshape_[ name of mesh]. 
-
-![Maya screenshot](https://i.ibb.co/D9QDx1n/Annotation-2020-02-27-110918.png)
-
-   - **Merging Blendshapes in Fuse:**
-	  - There are three blendshapes that need to be merged in maya, first, you need to identify.
-	  - BrowsOuterLower_Lefft and BrowsOuterLower_Right.
-	  - MouthNarrow_Left and MouthNarrow_Right.
-	  - CheekPuff_Left and CheekPuff_Right.
-
-Once you can see all the blendshapes, shown in the previous picture, scroll all the way down look for three type.
-
-![Maya screenshot](https://i.ibb.co/jwNDpVd/Annotation-2020-02-27-125500.png)
-
-In this example picture you want to select both the Left and Right blendshapes. Be sure to drag the toggles all the way to the right and select both Left and Right blendshapes and right click into one of them and select mirror targets. Once it is merged you need to find the name again, and rename it to cheekPuff, the name has to be exact!
-
-   - **Repeat the process for all three, then rename the merged blendshape to the names in bold:**
-	 - BrowsOuterLower_Lefft and BrowsOuterLower_Right = **browInnerUp**
-	 - MouthNarrow_Left and MouthNarrow_Right = **mouthPucker**
-	 - CheekPuff_Left and CheekPuffRight = **cheekPuff**
-
-![Maya screenshot](https://i.ibb.co/2dZDwgv/Autodesk-Maya-2018-Educational-Version-E-Python-Sripts-Python-Sripts-fuse-RLab-ma-6-24-2020-8-23-29-PM-2.png)
-
-## Setting Up Our Python Script in Maya will be the next steps!
+## Exporting and setting up our python script in Maya will be the next steps!
 
 ## Link back to table of Content [Here](https://github.com/RLabNYC/RLab_Facetracking)
 
