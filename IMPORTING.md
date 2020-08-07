@@ -157,7 +157,8 @@ There are a lot more other 3D software to create your avatars with out there. So
  - Adding hair and clothing and having it move in real time would be great next steps to dive into. Here is a [link](https://www.youtube.com/watch?v=9FYgoPZAZRA&list=TLPQMDYwODIwMjDv7CDRqBva0w&index=5) on applying hair on a avatar. Here is a [link](https://www.youtube.com/watch?v=9nLz4yTzbtw&t=454s) to create hair in Maya. 
    - Here are some links for more inspiration:
    - Matt Workman has a lot post on [facial tracking](https://www.youtube.com/watch?v=bf07hCA3Co0) and [virtual production](https://www.youtube.com/watch?v=C-M_GEKKmfU&t=21s)
-
+## TODO 
+**We are still having trouble getting the facial hair to move with blendshape targets, we would appreciate if someone within the community could help us out on this. Thank you!**
 
 
 ### Pull request guidelines
