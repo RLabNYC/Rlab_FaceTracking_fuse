@@ -28,9 +28,9 @@
 	  - **Editing Blendshapes in Maya from Fuse:**
 If you select the face mesh, you will see all the targets for the facial movements. Fuse will give you three blendshape groups, the last group is the one you want to focus on. If you change the workspace in maya to "Sculpting", you will be able to see the amount of blendshapes easier. 
 
-When you select the blendshape targets you can move the sliders back and forth and you will be able to see eyeís blinking and the mouth opening and closing.  
+When you select the blendshape targets you can move the sliders back and forth and you will be able to see eye‚Äôs blinking and the mouth opening and closing.  
 
-On the right, you see the name ìblendShape1î You can rename these groups like  ì_ncl1_1î. The group of **ì_ncl1_2î** is where most of the animations are. You need to rename the groups with circle square icons and a little ì +î sign next to it like ì_ncl1_2î to Blendshape_[ name of mesh]. 
+On the right, you see the name ‚ÄúblendShape1‚Äù You can rename these groups like  ‚Äú_ncl1_1‚Äù. The group of **‚Äú_ncl1_2‚Äù** is where most of the animations are. You need to rename the groups with circle square icons and a little ‚Äú +‚Äù sign next to it like ‚Äú_ncl1_2‚Äù to Blendshape_[ name of mesh]. 
 
 ![Maya screenshot](https://i.ibb.co/D9QDx1n/Annotation-2020-02-27-110918.png)
 
@@ -170,6 +170,6 @@ rename_morph_targets( node_name, attr_dict )
 
 # The next steps are [here](https://github.com/RLabNYC/Rlab_FaceTracking_fuse/blob/master/IMPORTING.md)
 
-## If you need to go back to the table of [contents](https://github.com/RLabNYC/RLab_Facetracking). For the Fuse modeling steps go [here](https://github.com/RLabNYC/RLab_Facetracking)
+## If you need to go back to the table of [contents](https://github.com/RLabNYC/RLab_Facetracking). For the Fuse modeling steps go [here](https://github.com/RLabNYC/Rlab_FaceTracking_fuse)
 
 
